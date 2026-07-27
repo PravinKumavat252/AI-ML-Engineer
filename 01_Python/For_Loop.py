@@ -64,47 +64,48 @@ for i in range(1, 11):
 
 # Find the sum of numbers from 1 to N.
 
-# n = int(input('Enter the number : '))
-# sum = 0
+n = int(input('Enter the number : '))
+sum = 0
 
-# for i in range(1, n+1):
-#     sum = sum + i
+for i in range(1, n+1):
+    sum = sum + i
 
-# print(f'the sum of numbers from 1 to {n} is {sum}')
+print(f'the sum of numbers from 1 to {n} is {sum}')
 
 
 
 #* Find the product of numbers from 1 to N.
 
-# n = int(input('Enter the number : '))
-# product = 1
-# for i in range(1, n+1):
-#     product = product * i
+n = int(input('Enter the number : '))
+product = 1
 
-# print(f'the product of numbers from 1 to {n} is {product}')
+for i in range(1, n+1):
+    product = product * i
+
+print(f'the product of numbers from 1 to {n} is {product}')
 
 
 
 #* Count from 100 to 1.
 
-# for i in range(100, 0, -1):
-#     print(i)
+for i in range(100, 0, -1):
+    print(i)
 
 
 
 #* Print all multiples of 5 from 1 to 100.
 
-# for i in range(1, 101):
-#     if i % 5 == 0:
-#         print(i)
+for i in range(1, 101):
+    if i % 5 == 0:
+        print(i)
 
 
 
 #* Print all multiples of 7 from 1 to 100.
 
-# for i in range(1, 101):
-#     if i % 7 == 0:
-#         print(i)
+for i in range(1, 101):
+    if i % 7 == 0:
+        print(i)
 
 
 
