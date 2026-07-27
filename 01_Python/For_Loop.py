@@ -25,40 +25,40 @@
 
 #* Print numbers from 1 to 10.
 
-# for i in range(1, 11):
-#     print(i)
+for i in range(1, 11):
+    print(i)
 
 
 
 #* Print numbers from 10 to 1.
 
-# for i in range(10, 0, -1):
-#     print(i)
+for i in range(10, 0, -1):
+    print(i)
 
 
 
 #* Print all even numbers from 1 to 50.
 
-# for i in range(1, 51):
-#     if i % 2 == 0:
-#         print(i)
+for i in range(1, 51):
+    if i % 2 == 0:
+        print(i)
 
 
 
 #* Print all odd numbers from 1 to 50.
 
-# for i in range(1, 51):
-#     if i % 2 == 1:
-#         print(i)
+for i in range(1, 51):
+    if i % 2 == 1:
+        print(i)
 
 
 
 #* Print the multiplication table of a given number.
 
-# n = int(input('Enter the number :'))
+n = int(input('Enter the number :'))
 
-# for i in range(1, 11):
-#     print(f'{n} * {i} = {n * i}')
+for i in range(1, 11):
+    print(f'{n} * {i} = {n * i}')
 
 
 
