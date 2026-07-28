@@ -111,157 +111,158 @@ for i in range(1, 101):
 
 #* Print squares of numbers from 1 to 10.
 
-# for i in range(1, 11):
-#     print(i * i)
+for i in range(1, 11):
+    print(i * i)
 
 
 
 #* Print cubes of numbers from 1 to 10.
 
-# for i in range(1, 11):
-#     print(i ** 3)
+for i in range(1, 11):
+    print(i ** 3)
 
 
 
 #* Print numbers divisible by both 3 and 5 from 1 to 100.
 
-# for i in range(1, 101):
-#     if (i % 3 == 0) and (i % 5 == 0):
-#         print(i)
+for i in range(1, 101):
+    if (i % 3 == 0) and (i % 5 == 0):
+        print(i)
 
 
 
 #* Count how many numbers are divisible by 4 from 1 to 100.
 
-# count = 0
-# for i in range(1, 101):
-#     if i % 4 == 0:
-#         count += 1
+count = 0
 
-# print(f'numbers are divisible by 4 from 1 to 100 is {count}')
+for i in range(1, 101):
+    if i % 4 == 0:
+        count += 1
+
+print(f'numbers are divisible by 4 from 1 to 100 is {count}')
 
 
 
 #* Print the first N natural numbers.
 
-# n = int(input('Enter the number : '))
+n = int(input('Enter the number : '))
 
-# for i in range(1, n+1):
-#     print(i)
+for i in range(1, n+1):
+    print(i)
 
 
 
 #* Print each character of a string.
 
-# s = input('Enter the string : ')
+s = input('Enter the string : ')
 
-# for i in s:
-#     print(i)
+for i in s:
+    print(i)
 
 
 
 #* Count the total characters in a string.
 
-# s = input('Enter the string : ')
-# count = 0
+s = input('Enter the string : ')
+count = 0
 
-# for i in s:
-#     count += 1
-
-# print(f"the total characters in a '{s}' is {count}")
+for i in s:
+    count += 1
+ 
+print(f"the total characters in a '{s}' is {count}")
 
 
 
 #* Count vowels in a string.
 
-# s = input('Enter the string : ')
-# count = 0
+s = input('Enter the string : ')
+count = 0
 
-# for i in s:
-#     if i in 'aeiouAEIOU':
-#         count += 1
+for i in s:
+    if i in 'aeiouAEIOU':
+        count += 1
 
-# print(f"Total vowels in a '{s}' is {count}")
+print(f"Total vowels in a '{s}' is {count}")
 
 
 
 #* Count consonants in a string.
 
-# s = input('Enter the string : ')
-# count = 0
+s = input('Enter the string : ')
+count = 0
 
-# for i in s:
-#     if i not in 'aeiouAEIOU':
-#         count += 1
+for i in s:
+    if i not in 'aeiouAEIOU':
+        count += 1
 
-# print(f"Total consonants in a '{s}' is {count}")
+print(f"Total consonants in a '{s}' is {count}")
 
 
 
 #* Count digits in a string.
 
-# s = input("Enter a string: ")
-# count = 0
+s = input("Enter a string: ")
+count = 0
 
-# for i in s:
-#     count += 1
+for i in s:
+    count += 1
 
-# print(f"Count digits in a '{s}' is {count}")
+print(f"Count digits in a '{s}' is {count}")
 
 
 
 #* Count uppercase letters.
 
-# s = input("Enter a string: ")
-# count = 0
+s = input("Enter a string: ")
+count = 0
 
-# for i in s:
-#     if 'A'<= i <= 'Z':
-#         count += 1
+for i in s:
+    if 'A'<= i <= 'Z':
+        count += 1
 
-# print(f"Count uppercase letters in '{s}' is {count}")
+print(f"Count uppercase letters in '{s}' is {count}")
 
 
 
 #* Count lowercase letters.
 
-# s = input("Enter a string: ")
-# count = 0
+s = input("Enter a string: ")
+count = 0
 
-# for i in s:
-#     if 'a'<= i <= 'z':
-#         count += 1
+for i in s:
+    if 'a'<= i <= 'z':
+        count += 1
 
-# print(f"Count lowercase letters in '{s}' is {count}")
+print(f"Count lowercase letters in '{s}' is {count}")
 
 
 
 #* Reverse a string using a for loop.
 
-# s = input('Enter the string : ')
-# out = ''
+s = input('Enter the string : ')
+out = ''
 
-# for i in s:
-#     out = i + out
+for i in s:
+    out = i + out
 
-# print(out)
+print(out)
 
 
 
 #* Check whether a character exists in a string.
 
-# s = input('Enter the string : ')
-# check = input('Enter the character :')
-# count = 0
+s = input('Enter the string : ')
+check = input('Enter the character :')
+count = 0
 
-# for i in s:
-#     if check == i:
-#         count += 1
+for i in s:
+    if check == i:
+        count += 1
     
-# if count > 0:
-#     print(f"'{check}' exists in a '{s}'")
-# else:
-#     print(f"'{check}' does not exist in a '{s}'")
+if count > 0:
+    print(f"'{check}' exists in a '{s}'")
+else:
+    print(f"'{check}' does not exist in a '{s}'")
 
 
 
