@@ -323,13 +323,13 @@
 # Welcome to Python OOP
 # ```
 
-# class Student:
+class Student:
 
-#     def display(self):
-#         print('Welcome to Python OOP')
+    def display(self):
+        print('Welcome to Python OOP')
 
-# s1 = Student()
-# s1.display()
+s1 = Student()
+s1.display()
 
 
 
@@ -347,16 +347,16 @@
 # Car Started
 # ```
 
-# class Car:
+class Car:
 
-#     def start(self):
-#         print('Car Started')
+    def start(self):
+        print('Car Started')
 
-# BMW = Car()
-# Audi = Car()
+BMW = Car()
+Audi = Car()
 
-# BMW.start()
-# Audi.start()
+BMW.start()
+Audi.start()
 
 
 
@@ -372,18 +372,18 @@
 # Calling...
 # ```
 
-# class Mobile:
+class Mobile:
 
-#     def call(self):
-#         print('Calling...')
+    def call(self):
+        print('Calling...')
 
-# mob1 = Mobile()
-# mob2 = Mobile()
-# mob3 = Mobile()
+mob1 = Mobile()
+mob2 = Mobile()
+mob3 = Mobile()
 
-# mob1.call()
-# mob2.call()
-# mob3.call()
+mob1.call()
+mob2.call()
+mob3.call()
 
 
 
@@ -396,22 +396,22 @@
 #* - `subtract()`
 #* - `multiply()`
 
-# class Calculator:
+class Calculator:
 
-#     def add(self, a, b):
-#         print(f'Addition : {a + b}')
+    def add(self, a, b):
+        print(f'Addition : {a + b}')
 
-#     def subtract(self, a, b):
-#         print(f'Subtraction : {a - b}')
+    def subtract(self, a, b):
+        print(f'Subtraction : {a - b}')
 
-#     def multiply(self, a, b):
-#         print(f'Multiplication : {a * b}')
+    def multiply(self, a, b):
+        print(f'Multiplication : {a * b}')
 
-# calc = Calculator()
+calc = Calculator()
 
-# calc.add(2, 5)
-# calc.subtract(4, 6)
-# calc.multiply(4, 7)
+calc.add(2, 5)
+calc.subtract(4, 6)
+calc.multiply(4, 7)
 
 
 
@@ -426,31 +426,31 @@
 #* - `check_balance()`
 #* - Each method should print a suitable message.
 
-# class Bank:
-#     balance = 500
+class Bank:
+    balance = 500
 
-#     def deposit(self, n):
-#         self.balance = self.balance + n
-#         print(f"{n} Amount Deposited")
+    def deposit(self, n):
+        self.balance = self.balance + n
+        print(f"{n} Amount Deposited")
 
-#     def withdraw(self, n):
-#         if self.balance > n:    
-#             self.balance = self.balance - n
-#             print(f"{n}Amount Withdrawn")
+    def withdraw(self, n):
+        if self.balance > n:    
+            self.balance = self.balance - n
+            print(f"{n}Amount Withdrawn")
 
-#         else:
-#             print('Insufficient balance')
+        else:
+            print('Insufficient balance')
    
-#     def check_balance(self):
-#         print("Balance:", self.balance)
+    def check_balance(self):
+        print("Balance:", self.balance)
 
-# b = Bank()
+b = Bank()
 
-# b.deposit(500)
-# b.check_balance()
+b.deposit(500)
+b.check_balance()
 
-# b.withdraw(8000)
-# b.check_balance()
+b.withdraw(8000)
+b.check_balance()
 
 
 
@@ -467,29 +467,29 @@
 #*   - `sound()`
 #* - Call all methods using both objects.
 
-# class Animal:
+class Animal:
 
-#     def eat(self):
-#         print('Eatting...')
+    def eat(self):
+        print('Eatting...')
 
-#     def sleep(self):
-#         print('Sleeping...')
+    def sleep(self):
+        print('Sleeping...')
 
-#     def sound(self):
-#         print('Sounding...')
+    def sound(self):
+        print('Sounding...')
 
-# dog = Animal()
-# cat = Animal()
+dog = Animal()
+cat = Animal()
 
-# dog.eat()
-# dog.sleep()
-# dog.sound()
+dog.eat()
+dog.sleep()
+dog.sound()
 
-# print()
+print()
 
-# cat.eat()
-# cat.sleep()
-# cat.sound()
+cat.eat()
+cat.sleep()
+cat.sound()
 
 
 
@@ -505,26 +505,26 @@
 
 #* Create two objects and call all methods using both objects.
 
-# class College:
+class College:
 
-#     def admission(self):
-#         print("Admission Completed")
+    def admission(self):
+        print("Admission Completed")
 
-#     def exam(self):
-#         print("Exam Started")
+    def exam(self):
+        print("Exam Started")
 
-#     def result(self):
-#         print("Result Declared")
+    def result(self):
+        print("Result Declared")
 
-#     def certificate(self):
-#         print("Certificate Issued")
+    def certificate(self):
+        print("Certificate Issued")
 
-# c = College()
+c = College()
 
-# c.admission()
-# c.exam()
-# c.result()
-# c.certificate()
+c.admission()
+c.exam()
+c.result()
+c.certificate()
 
 
 
@@ -540,44 +540,44 @@
 #*   - `restart()`
 #* - Call every method using every object.
 
-# class Laptop:
+class Laptop:
 
-#     def power_on(self):
-#         print("Laptop Powered On")
+    def power_on(self):
+        print("Laptop Powered On")
 
-#     def coding(self):
-#         print("Coding Started")
+    def coding(self):
+        print("Coding Started")
 
-#     def shutdown(self):
-#         print("Laptop Shut Down")
+    def shutdown(self):
+        print("Laptop Shut Down")
 
-#     def restart(self):
-#         print("Laptop Restarted")
+    def restart(self):
+        print("Laptop Restarted")
 
-# l1 = Laptop()
-# l2 = Laptop()
-# l3 = Laptop()
+l1 = Laptop()
+l2 = Laptop()
+l3 = Laptop()
 
-# print()
+print()
 
-# l1.power_on()
-# l1.coding()
-# l1.shutdown()
-# l1.restart()
+l1.power_on()
+l1.coding()
+l1.shutdown()
+l1.restart()
 
-# print()
+print()
 
-# l2.power_on()
-# l2.coding()
-# l2.shutdown()
-# l2.restart()
+l2.power_on()
+l2.coding()
+l2.shutdown()
+l2.restart()
 
-# print()
+print()
 
-# l3.power_on()
-# l3.coding()
-# l3.shutdown()
-# l3.restart()
+l3.power_on()
+l3.coding()
+l3.shutdown()
+l3.restart()
 
 
 
@@ -593,34 +593,34 @@
 
 #* Create two ATM user objects.
 
-# class ATM:
+class ATM:
 
-#     def insert_card(self):
-#         print("Card Inserted")
+    def insert_card(self):
+        print("Card Inserted")
 
-#     def enter_pin(self):
-#         print("PIN Entered")
+    def enter_pin(self):
+        print("PIN Entered")
 
-#     def withdraw_cash(self):
-#         print("Cash Withdrawn")
+    def withdraw_cash(self):
+        print("Cash Withdrawn")
 
-#     def print_receipt(self):
-#         print("Receipt Printed")
+    def print_receipt(self):
+        print("Receipt Printed")
 
-# a = ATM()
-# b = ATM()
+a = ATM()
+b = ATM()
 
-# a.insert_card()
-# a.enter_pin()
-# a.withdraw_cash()
-# a.print_receipt()
+a.insert_card()
+a.enter_pin()
+a.withdraw_cash()
+a.print_receipt()
 
-# print()
+print()
 
-# b.insert_card
-# b.enter_pin()
-# b.withdraw_cash()
-# b.print_receipt()
+b.insert_card
+b.enter_pin()
+b.withdraw_cash()
+b.print_receipt()
 
 
 
@@ -637,45 +637,45 @@
 
 #* Create three patient objects.
 
-# class Hospital:
+class Hospital:
     
-#     def registration(self):
-#         print("Patient Registered")
+    def registration(self):
+        print("Patient Registered")
 
-#     def doctor_checkup(self):
-#         print("Doctor Checkup Completed")
+    def doctor_checkup(self):
+        print("Doctor Checkup Completed")
 
-#     def medicine(self):
-#         print("Medicine Provided")
+    def medicine(self):
+        print("Medicine Provided")
 
-#     def payment(self):
-#         print("Payment Completed")
+    def payment(self):
+        print("Payment Completed")
 
-#     def discharge(self):
-#         print("Patient Discharged")
+    def discharge(self):
+        print("Patient Discharged")
 
-# a = Hospital()
-# b = Hospital()
-# c = Hospital()
+a = Hospital()
+b = Hospital()
+c = Hospital()
 
-# a.registration()
-# a.doctor_checkup()
-# a.medicine()
-# a.payment()
-# a.discharge()
+a.registration()
+a.doctor_checkup()
+a.medicine()
+a.payment()
+a.discharge()
 
-# print()
+print()
 
-# b.registration()
-# b.doctor_checkup()
-# b.medicine()
-# b.payment()
-# b.discharge()
+b.registration()
+b.doctor_checkup()
+b.medicine()
+b.payment()
+b.discharge()
 
-# print()
+print()
 
-# c.registration()
-# c.doctor_checkup()
-# c.medicine()
-# c.payment()
-# c.discharge()
+c.registration()
+c.doctor_checkup()
+c.medicine()
+c.payment()
+c.discharge()
