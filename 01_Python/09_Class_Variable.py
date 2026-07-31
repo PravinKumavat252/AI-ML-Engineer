@@ -410,22 +410,22 @@
 #* Call the `display_details()` method for both objects.
 
 
-# class Student:
+class Student:
 
-#     college_name = "Monark University"
+    college_name = "Monark University"
 
-#     def __init__(self, name, age):
-#         self.name = name
-#         self.age = age
+    def __init__(self, name, age):
+        self.name = name
+        self.age = age
 
-#     def display_details(self):
-#         print(f"College Name : {Student.college_name}, Student Name : {self.name}, Age : {self.age}")
+    def display_details(self):
+        print(f"College Name : {Student.college_name}, Student Name : {self.name}, Age : {self.age}")
 
-# s1 = Student('Pravin', 22)
-# s2 = Student('Rahul', 21)
+s1 = Student('Pravin', 22)
+s2 = Student('Rahul', 21)
 
-# s1.display_details()
-# s2.display_details()
+s1.display_details()
+s2.display_details()
 
 
 
@@ -450,22 +450,22 @@
 # * Create **2 Employee objects**.
 # * Call the `display_employee()` method for both objects.
 
-# class Employee:
+class Employee:
 
-#     company_name = "TCS"
+    company_name = "TCS"
 
-#     def __init__(self, name, salary):
-#         self.name = name
-#         self.salary = salary
+    def __init__(self, name, salary):
+        self.name = name
+        self.salary = salary
 
-#     def display_employee(self):
-#         print(f"Company Name : {Employee.company_name}, Employee Name : {self.name}, Salary : {self.salary}")
+    def display_employee(self):
+        print(f"Company Name : {Employee.company_name}, Employee Name : {self.name}, Salary : {self.salary}")
 
-# e1 = Employee('Pravin', 45000)
-# e2 = Employee('Rahul', 38000)
+e1 = Employee('Pravin', 45000)
+e2 = Employee('Rahul', 38000)
 
-# e1.display_employee()
-# e2.display_employee()
+e1.display_employee()
+e2.display_employee()
 
 
 
@@ -493,24 +493,24 @@
 # * Create **2 Car objects**.
 # * Call the `display_car()` method for both objects.
 
-# class Car:
+class Car:
 
-#     wheels = 4
+    wheels = 4
 
-#     def __init__(self, company, model, price):
-#         self.company = company
-#         self.model = model
-#         self.price = price
+    def __init__(self, company, model, price):
+        self.company = company
+        self.model = model
+        self.price = price
 
-#     def display_car(self):
-#         print(f"Company Name : {self.company}, Model : {self.model}, Price : {self.price}, Number of Wheels : {Car.wheels}")
+    def display_car(self):
+        print(f"Company Name : {self.company}, Model : {self.model}, Price : {self.price}, Number of Wheels : {Car.wheels}")
 
 
-# c1 = Car("BMW", "X5", 9500000)
-# c2 = Car("Audi", "A6", 7000000)
+c1 = Car("BMW", "X5", 9500000)
+c2 = Car("Audi", "A6", 7000000)
 
-# c1.display_car()
-# c2.display_car()
+c1.display_car()
+c2.display_car()
 
 
 
@@ -538,23 +538,23 @@
 # * Create **2 Mobile objects**.
 # * Call the `display_mobile()` method for both objects.
 
-# class Mobile:
+class Mobile:
 
-#     category = "Smartphone"
+    category = "Smartphone"
 
-#     def __init__(self, company, ram, storage):
-#         self.company = company
-#         self.ram = ram
-#         self.storage = storage
+    def __init__(self, company, ram, storage):
+        self.company = company
+        self.ram = ram
+        self.storage = storage
 
-#     def display_mobile(self):
-#         print(f"Company Name : {self.company}, Ram : {self.ram}, Storage : {self.storage}, Category : {Mobile.category}")
+    def display_mobile(self):
+        print(f"Company Name : {self.company}, Ram : {self.ram}, Storage : {self.storage}, Category : {Mobile.category}")
 
-# m1 = Mobile("Samsung", 8, 128)
-# m2 = Mobile("Apple", 6, 256)
+m1 = Mobile("Samsung", 8, 128)
+m2 = Mobile("Apple", 6, 256)
 
-# m1.display_mobile()
-# m2.display_mobile()
+m1.display_mobile()
+m2.display_mobile()
 
 
 
@@ -579,23 +579,23 @@
 # * Create **2 BankAccount objects**.
 # * Call the `display_account()` method for both objects.
 
-# class BankAccount:
+class BankAccount:
 
-#     bank_name = "State Bank of India"
+    bank_name = "State Bank of India"
 
-#     def __init__(self, account_holder, balance):
-#         self.account_holder = account_holder
-#         self.balance = balance
+    def __init__(self, account_holder, balance):
+        self.account_holder = account_holder
+        self.balance = balance
 
-#     def display_account(self):
-#         print(f"Bank Name : {BankAccount.bank_name}, Account Holder : {self.account_holder}, Balance : {self.balance}")
+    def display_account(self):
+        print(f"Bank Name : {BankAccount.bank_name}, Account Holder : {self.account_holder}, Balance : {self.balance}")
 
 
-# b1 = BankAccount("Pravin", 50000)
-# b2 = BankAccount("Rahul", 35000)
+b1 = BankAccount("Pravin", 50000)
+b2 = BankAccount("Rahul", 35000)
 
-# b1.display_account()
-# b2.display_account()
+b1.display_account()
+b2.display_account()
 
 
 
@@ -622,23 +622,23 @@
 # * Create **2 Laptop objects**.
 # * Call the `display_specs()` method for both objects.
 
-# class Laptop:
+class Laptop:
 
-#     brand_type = "Business Laptop"
+    brand_type = "Business Laptop"
 
-#     def __init__(self, brand, processor, ram):
-#         self.brand = brand
-#         self.processor = processor
-#         self.ram = ram
+    def __init__(self, brand, processor, ram):
+        self.brand = brand
+        self.processor = processor
+        self.ram = ram
 
-#     def display_specs(self):
-#         print(f"Brand Name : {self.brand}, Brand Type : {Laptop.brand_type}, Processor : {self.processor}, RAM : {self.ram}")
+    def display_specs(self):
+        print(f"Brand Name : {self.brand}, Brand Type : {Laptop.brand_type}, Processor : {self.processor}, RAM : {self.ram}")
 
-# l1 = Laptop("Dell", "Intel i5", 8)
-# l2 = Laptop("HP", "Intel i7", 16)
+l1 = Laptop("Dell", "Intel i5", 8)
+l2 = Laptop("HP", "Intel i7", 16)
 
-# l1.display_specs()
-# l2.display_specs()
+l1.display_specs()
+l2.display_specs()
 
 
 
@@ -665,23 +665,23 @@
 # * Create **2 Book objects**.
 # * Call the `display_book()` method for both objects.
 
-# class Book:
+class Book:
 
-#     language = "English"
+    language = "English"
 
-#     def __init__(self, title, author, price):
-#         self.title = title
-#         self.author = author
-#         self.price = price
+    def __init__(self, title, author, price):
+        self.title = title
+        self.author = author
+        self.price = price
 
-#     def display_book(self):
-#         print(f"Title of Book {self.title}, Name of Author : {self.author}, Price : {self.price}, Language : {Book.language}")
+    def display_book(self):
+        print(f"Title of Book {self.title}, Name of Author : {self.author}, Price : {self.price}, Language : {Book.language}")
     
-# b1 = Book("Python Basics", "Guido van Rossum", 800)
-# b2 = Book("Data Science", "Andrew Ng", 1200)
+b1 = Book("Python Basics", "Guido van Rossum", 800)
+b2 = Book("Data Science", "Andrew Ng", 1200)
 
-# b1.display_book()
-# b2.display_book()
+b1.display_book()
+b2.display_book()
 
 
 
@@ -709,24 +709,24 @@
 # * Create **2 Patient objects**.
 # * Call the `display_patient()` method for both objects.
 
-# class Patient:
+class Patient:
 
-#     hospital_name = "City Hospital"
+    hospital_name = "City Hospital"
 
-#     def __init__(self, patient_name, age, disease):
-#         self.patient_name = patient_name
-#         self.age = age
-#         self.disease = disease
+    def __init__(self, patient_name, age, disease):
+        self.patient_name = patient_name
+        self.age = age
+        self.disease = disease
 
-#     def display_patient(self):
-#         print(f"Hospital Name : {Patient.hospital_name}, Patient Name : {self.patient_name}, Age : {self.age}, Disease : {self.disease}")
+    def display_patient(self):
+        print(f"Hospital Name : {Patient.hospital_name}, Patient Name : {self.patient_name}, Age : {self.age}, Disease : {self.disease}")
 
 
-# p1 = Patient("Pravin", 22, "Fever")
-# p2 = Patient("Rahul", 25, "Cold")
+p1 = Patient("Pravin", 22, "Fever")
+p2 = Patient("Rahul", 25, "Cold")
 
-# p1.display_patient()
-# p2.display_patient()
+p1.display_patient()
+p2.display_patient()
 
 
 
@@ -753,39 +753,39 @@
 # * Create **2 ATM objects**.
 # * Call all methods for both objects.
 
-# class ATM:
+class ATM:
 
-#     bank_name = "HDFC Bank"
+    bank_name = "HDFC Bank"
 
-#     def __init__(self, account_holder, balance):
-#         self.account_holder = account_holder
-#         self.balance = balance
+    def __init__(self, account_holder, balance):
+        self.account_holder = account_holder
+        self.balance = balance
 
-#     def deposit(self, amount):
-#         self.balance += amount
-#         print(f"₹{amount} deposit successfully.")
+    def deposit(self, amount):
+        self.balance += amount
+        print(f"₹{amount} deposit successfully.")
 
-#     def withdraw(self, amount):
-#         if amount <= self.balance:
-#             self.balance -= amount
-#             print(f"₹{amount} withdraw successfully.")
-#         else:
-#             print('Insufficient Balace')
+    def withdraw(self, amount):
+        if amount <= self.balance:
+            self.balance -= amount
+            print(f"₹{amount} withdraw successfully.")
+        else:
+            print('Insufficient Balace')
 
-#     def display_balance(self):
-#         print(f"{self.account_holder}'s balance is ₹{self.balance}")
+    def display_balance(self):
+        print(f"{self.account_holder}'s balance is ₹{self.balance}")
 
-# a1 = ATM("Pravin", 40000)
-# a2 = ATM("Rahul", 30000)
+a1 = ATM("Pravin", 40000)
+a2 = ATM("Rahul", 30000)
 
-# a1.deposit(5000)
-# a2.deposit(10000)
+a1.deposit(5000)
+a2.deposit(10000)
 
-# a1.withdraw(7000)
-# a2.withdraw(5000)
+a1.withdraw(7000)
+a2.withdraw(5000)
 
-# a1.display_balance()
-# a2.display_balance()
+a1.display_balance()
+a2.display_balance()
 
 
 
@@ -812,20 +812,20 @@
 # * Create **2 CollegeStudent objects**.
 # * Call the `display_student()` method for both objects.
 
-# class CollegeStudent:
+class CollegeStudent:
 
-#     university = "Monark University"
+    university = "Monark University"
 
-#     def __init__(self, name, roll_no, semester):
-#         self.name = name
-#         self.roll_no = roll_no
-#         self.semester = semester
+    def __init__(self, name, roll_no, semester):
+        self.name = name
+        self.roll_no = roll_no
+        self.semester = semester
 
-#     def display_student(self):
-#         print(f"university Name : {CollegeStudent.university}, Srudent Name : {self.name}, Roll No. : {self.roll_no}, Semester : {self.semester}")
+    def display_student(self):
+        print(f"university Name : {CollegeStudent.university}, Srudent Name : {self.name}, Roll No. : {self.roll_no}, Semester : {self.semester}")
 
-# c1 = CollegeStudent("Pravin", 101, 3)
-# c2 = CollegeStudent("Rahul", 102, 5)
+c1 = CollegeStudent("Pravin", 101, 3)
+c2 = CollegeStudent("Rahul", 102, 5)
 
-# c1.display_student()
-# c2.display_student()
+c1.display_student()
+c2.display_student()
