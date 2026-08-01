@@ -306,21 +306,21 @@
 #* It should print all student details.
 #* Create 2 student objects and call the method.
 
-# class Student:
+class Student:
 
-#     def __init__(self, name, age, course):
-#         self.name = name
-#         self.age = age
-#         self.course = course
+    def __init__(self, name, age, course):
+        self.name = name
+        self.age = age
+        self.course = course
 
-#     def display(self):
-#         print(f'Name : {self.name}, Age : {self.age}, Course : {self.course}')
+    def display(self):
+        print(f'Name : {self.name}, Age : {self.age}, Course : {self.course}')
 
-# s1 = Student("Pravin", 22, "BCA")
-# s2 = Student("Rahul", 21, "B.Tech")
+s1 = Student("Pravin", 22, "BCA")
+s2 = Student("Rahul", 21, "B.Tech")
 
-# s1.display()
-# s2.display()
+s1.display()
+s2.display()
 
 
 
@@ -341,28 +341,28 @@
 #* Battery is charging...
 #* Create 2 mobile objects.
 
-# class Mobile:
+class Mobile:
 
-#     def __init__(self, company, ram, storage, battery):
-#         self.company = company
-#         self.ram = ram
-#         self.storage = storage
-#         self.battery = battery
+    def __init__(self, company, ram, storage, battery):
+        self.company = company
+        self.ram = ram
+        self.storage = storage
+        self.battery = battery
 
-#     def display_mobile(self):
-#         print(f'Company : {self.company}, Ram = {self.ram}, Storage : {self.storage}')
+    def display_mobile(self):
+        print(f'Company : {self.company}, Ram = {self.ram}, Storage : {self.storage}')
 
-#     def charge(self):
-#         print(f'{self.company} Mobile is Charging ({self.battery} mAh Battery)')
+    def charge(self):
+        print(f'{self.company} Mobile is Charging ({self.battery} mAh Battery)')
 
-# m1 = Mobile("Samsung", 8, 128, 5000)
-# m2 = Mobile("Apple", 6, 256, 4500)
+m1 = Mobile("Samsung", 8, 128, 5000)
+m2 = Mobile("Apple", 6, 256, 4500)
 
-# m1.display_mobile()
-# m2.display_mobile()
+m1.display_mobile()
+m2.display_mobile()
 
-# m1.charge()
-# m2.charge()
+m1.charge()
+m2.charge()
 
 
 
@@ -381,34 +381,34 @@
 #* stop()
 #* Create 2 car objects.
 
-# class Car:
+class Car:
 
-#     def __init__(self, company, model, color, price):
-#         self.company = company
-#         self.model = model
-#         self.color = color
-#         self.price = price
+    def __init__(self, company, model, color, price):
+        self.company = company
+        self.model = model
+        self.color = color
+        self.price = price
 
-#     def display(self):
-#         print(f'Company Name : {self.company}, Model : {self.model}, Colour : {self.color}, Price : {self.price}')
+    def display(self):
+        print(f'Company Name : {self.company}, Model : {self.model}, Colour : {self.color}, Price : {self.price}')
 
-#     def start(self):
-#         print(f"{self.company} {self.model} is Starting...")
+    def start(self):
+        print(f"{self.company} {self.model} is Starting...")
 
-#     def stop(self):
-#         print(f"{self.company} {self.model} is Stopped.")
+    def stop(self):
+        print(f"{self.company} {self.model} is Stopped.")
 
-# c1 = Car("BMW", "X5", "Black", 9500000)
-# c2 = Car("Audi", "A6", "White", 7000000)
+c1 = Car("BMW", "X5", "Black", 9500000)
+c2 = Car("Audi", "A6", "White", 7000000)
 
-# c1.display()
-# c2.display()
+c1.display()
+c2.display()
 
-# c1.start()
-# c2.start()
+c1.start()
+c2.start()
 
-# c1.stop()
-# c2.stop()
+c1.stop()
+c2.stop()
 
 
 
@@ -426,28 +426,28 @@
 #* Inside increase_salary(), increase salary by ₹5000 and display the updated salary.
 #* Create 2 employee objects.
 
-# class Employee:
+class Employee:
 
-#     def __init__(self, name, department, salary):
-#         self.name = name
-#         self.department = department
-#         self.salary = salary
+    def __init__(self, name, department, salary):
+        self.name = name
+        self.department = department
+        self.salary = salary
 
-#     def display_details(self):
-#         print(f"Name : {self.name}, Department : {self.department}, Salary : {self.salary}")
+    def display_details(self):
+        print(f"Name : {self.name}, Department : {self.department}, Salary : {self.salary}")
 
-#     def increase_salary(self):
-#         self.salary += 5000
-#         print(f"{self.name}'s updated salary is {self.salary}")
+    def increase_salary(self):
+        self.salary += 5000
+        print(f"{self.name}'s updated salary is {self.salary}")
 
-# e1 = Employee("Pravin", "IT", 40000)
-# e2 = Employee("Rahul", "HR", 35000)
+e1 = Employee("Pravin", "IT", 40000)
+e2 = Employee("Rahul", "HR", 35000)
 
-# e1.display_details()
-# e2.display_details()
+e1.display_details()
+e2.display_details()
 
-# e1.increase_salary()
-# e2.increase_salary()
+e1.increase_salary()
+e2.increase_salary()
 
 
 
@@ -465,38 +465,38 @@
 #* display_balance()
 #* Deposit and withdraw money using methods.
 
-# class BankAccount:
+class BankAccount:
 
-#     def __init__(self, account_holder, account_number, balance):
-#         self.account_holder = account_holder
-#         self.account_number = account_number
-#         self.balance = balance
+    def __init__(self, account_holder, account_number, balance):
+        self.account_holder = account_holder
+        self.account_number = account_number
+        self.balance = balance
 
-#     def deposit(self, amount):
-#         self.balance += amount
-#         print(f"₹{amount} deposited successfully.")
+    def deposit(self, amount):
+        self.balance += amount
+        print(f"₹{amount} deposited successfully.")
 
-#     def withdraw(self, amount):
-#         if amount <= self.balance:
-#             self.balance -= amount
-#             print(f"₹{amount} withdraw successfully.")
-#         else:
-#             print('Insufficient Balace')
+    def withdraw(self, amount):
+        if amount <= self.balance:
+            self.balance -= amount
+            print(f"₹{amount} withdraw successfully.")
+        else:
+            print('Insufficient Balace')
 
-#     def display_balance(self):
-#         print(f"{self.account_holder}'s Balance : ₹{self.balance}")
+    def display_balance(self):
+        print(f"{self.account_holder}'s Balance : ₹{self.balance}")
 
-# b1 = BankAccount("Pravin", 1234567890, 50000)
-# b2 = BankAccount("Rahul", 9876543210, 30000)
+b1 = BankAccount("Pravin", 1234567890, 50000)
+b2 = BankAccount("Rahul", 9876543210, 30000)
 
-# b1.deposit(10000)
-# b1.withdraw(5000)
+b1.deposit(10000)
+b1.withdraw(5000)
 
-# b2.deposit(7000)
-# b2.withdraw(2000)
+b2.deposit(7000)
+b2.withdraw(2000)
 
-# b1.display_balance()
-# b2.display_balance()
+b1.display_balance()
+b2.display_balance()
 
 
 
@@ -515,29 +515,29 @@
 #* Increase RAM by 8 GB.
 #* Create 2 laptop objects.
 
-# class Laptop:
+class Laptop:
 
-#     def __init__(self, brand, processor, ram, price):
-#         self.brand = brand
-#         self.processor = processor
-#         self.ram = ram
-#         self.price = price
+    def __init__(self, brand, processor, ram, price):
+        self.brand = brand
+        self.processor = processor
+        self.ram = ram
+        self.price = price
 
-#     def display_specs(self):
-#         print(f"{self.brand} Laptop ({self.processor}) has {self.ram} GB RAM")
+    def display_specs(self):
+        print(f"{self.brand} Laptop ({self.processor}) has {self.ram} GB RAM")
 
-#     def upgrade_ram(self, upgrade_ram):
-#         self.ram += upgrade_ram
-#         print(f"{self.brand} RAM upgraded to {self.ram} GB")
+    def upgrade_ram(self, upgrade_ram):
+        self.ram += upgrade_ram
+        print(f"{self.brand} RAM upgraded to {self.ram} GB")
 
-# l1 = Laptop("Dell", "Intel i5", 8, 55000)
-# l2 = Laptop("HP", "Intel i7", 16, 75000)
+l1 = Laptop("Dell", "Intel i5", 8, 55000)
+l2 = Laptop("HP", "Intel i7", 16, 75000)
 
-# l1.display_specs()
-# l2.display_specs()
+l1.display_specs()
+l2.display_specs()
 
-# l1.upgrade_ram(2)
-# l2.upgrade_ram(2)
+l1.upgrade_ram(2)
+l2.upgrade_ram(2)
 
 
 
@@ -555,28 +555,28 @@
 #* Reduce the book price by 10% and print the new price.
 #* Create 2 book objects.
 
-# class Book:
+class Book:
 
-#     def __init__(self, title, author, price):
-#         self.title = title
-#         self.author = author
-#         self.price = price
+    def __init__(self, title, author, price):
+        self.title = title
+        self.author = author
+        self.price = price
 
-#     def display_book(self):
-#         print(f"Title of Book : {self.title}, Name of Author : {self.author}, Price : {self.price}")
+    def display_book(self):
+        print(f"Title of Book : {self.title}, Name of Author : {self.author}, Price : {self.price}")
 
-#     def discount(self):
-#         self.price = self.price - self.price // 10
-#         print(f"Discount of the book {self.title} is {self.price}")
+    def discount(self):
+        self.price = self.price - self.price // 10
+        print(f"Discount of the book {self.title} is {self.price}")
 
-# b1 = Book("Python Basics", "Guido", 800)
-# b2 = Book("Data Science", "Andrew", 1200)
+b1 = Book("Python Basics", "Guido", 800)
+b2 = Book("Data Science", "Andrew", 1200)
 
-# b1.display_book()
-# b2.display_book()
+b1.display_book()
+b2.display_book()
 
-# b1.discount()
-# b2.discount()
+b1.discount()
+b2.discount()
 
 
 
@@ -595,27 +595,27 @@
 #* Patient is consulting the doctor.
 #* Create 2 patient objects.
 
-# class Patient:
+class Patient:
 
-#     def __init__(self, patient_name, age, disease):
-#         self.patient_name = patient_name
-#         self.age = age
-#         self.disease = disease
+    def __init__(self, patient_name, age, disease):
+        self.patient_name = patient_name
+        self.age = age
+        self.disease = disease
 
-#     def display_patient(self):
-#         print(f" Name of Patient : {self.patient_name}, Age : {self.age}, Disease : {self.disease}")
+    def display_patient(self):
+        print(f" Name of Patient : {self.patient_name}, Age : {self.age}, Disease : {self.disease}")
 
-#     def consult_doctor(self):
-#         print(f"{self.patient_name} is consulting the doctor.")
+    def consult_doctor(self):
+        print(f"{self.patient_name} is consulting the doctor.")
 
-# p1 = Patient("Pravin", 22, "Fever")
-# p2 = Patient("Rahul", 25, "Cold")
+p1 = Patient("Pravin", 22, "Fever")
+p2 = Patient("Rahul", 25, "Cold")
 
-# p1.display_patient()
-# p2.display_patient()
+p1.display_patient()
+p2.display_patient()
 
-# p1.consult_doctor()
-# p2.consult_doctor()
+p1.consult_doctor()
+p2.consult_doctor()
 
 
 
@@ -632,37 +632,37 @@
 #* check_balance()
 #* Update the balance after each transaction.
 
-# class ATM:
+class ATM:
 
-#     def __init__(self, account_holder, balance):
-#         self.account_holder = account_holder
-#         self.balance = balance
+    def __init__(self, account_holder, balance):
+        self.account_holder = account_holder
+        self.balance = balance
 
-#     def withdraw(self, amount):
-#         if amount <= self.balance:
-#             self.balance -= amount
-#             print(f"₹{amount} withdraw successfully.")
-#         else:
-#             print('Insufficient Balace')
+    def withdraw(self, amount):
+        if amount <= self.balance:
+            self.balance -= amount
+            print(f"₹{amount} withdraw successfully.")
+        else:
+            print('Insufficient Balace')
 
-#     def deposit(self, amount):
-#         self.balance += amount
-#         print(f"₹{amount} deposit successfully.")
+    def deposit(self, amount):
+        self.balance += amount
+        print(f"₹{amount} deposit successfully.")
 
-#     def check_balance(self):
-#         print(f"{self.account_holder}'s balance is ₹{self.balance}")
+    def check_balance(self):
+        print(f"{self.account_holder}'s balance is ₹{self.balance}")
 
-# a1 = ATM("Pravin", 40000)
-# a2 = ATM("Rahul", 25000)
+a1 = ATM("Pravin", 40000)
+a2 = ATM("Rahul", 25000)
 
-# a1.deposit(5000)
-# a1.withdraw(7000)
+a1.deposit(5000)
+a1.withdraw(7000)
 
-# a2.deposit(10000)
-# a2.withdraw(3000)
+a2.deposit(10000)
+a2.withdraw(3000)
 
-# a1.check_balance()
-# a2.check_balance()
+a1.check_balance()
+a2.check_balance()
 
 
 
@@ -681,26 +681,26 @@
 #* Increase the semester by 1 and display the updated semester.
 #* Create 2 student objects.
 
-# class CollegeStudent:
+class CollegeStudent:
 
-#     def __init__(self, name, roll_no, semester, cgpa):
-#         self.name = name
-#         self.roll_no = roll_no
-#         self.semester = semester
-#         self.cgpa = cgpa
+    def __init__(self, name, roll_no, semester, cgpa):
+        self.name = name
+        self.roll_no = roll_no
+        self.semester = semester
+        self.cgpa = cgpa
 
-#     def display_details(self):
-#         print(f"Student Name : {self.name}, Roll No. : {self.roll_no}, Semester : {self.semester}, CGPA : {self.cgpa}")
+    def display_details(self):
+        print(f"Student Name : {self.name}, Roll No. : {self.roll_no}, Semester : {self.semester}, CGPA : {self.cgpa}")
 
-#     def promote_semester(self):
-#         self.semester += 1
-#         print(f"{self.name} has been promoted to Semester {self.semester}.")
+    def promote_semester(self):
+        self.semester += 1
+        print(f"{self.name} has been promoted to Semester {self.semester}.")
 
-# cs1 = CollegeStudent("Pravin", 101, 3, 8.2)
-# cs2 = CollegeStudent("Rahul", 102, 5, 7.8)
+cs1 = CollegeStudent("Pravin", 101, 3, 8.2)
+cs2 = CollegeStudent("Rahul", 102, 5, 7.8)
 
-# cs1.display_details()
-# cs2.display_details()
+cs1.display_details()
+cs2.display_details()
 
-# cs1.promote_semester()
-# cs2.promote_semester()
+cs1.promote_semester()
+cs2.promote_semester()
