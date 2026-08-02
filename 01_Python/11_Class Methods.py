@@ -200,31 +200,31 @@
 #* Change the college name to "Gujarat University" using the class method.
 #* Display both students again.
 
-# class Student:
+class Student:
      
-#     college_name = "Monark University"
+    college_name = "Monark University"
 
-#     def __init__(self, name, age):
-#         self.name = name
-#         self.age = age
+    def __init__(self, name, age):
+        self.name = name
+        self.age = age
 
-#     @classmethod
-#     def change_college(cls, new_name):
-#         cls.college_name = new_name
+    @classmethod
+    def change_college(cls, new_name):
+        cls.college_name = new_name
 
-#     def display_details(self):
-#         return f"College Name : {Student.college_name}, Student Name : {self.name}, Age : {self.age}"
+    def display_details(self):
+        return f"College Name : {Student.college_name}, Student Name : {self.name}, Age : {self.age}"
 
-# s1 = Student("Pravin", 22)
-# s2 = Student("Rahul", 21)
+s1 = Student("Pravin", 22)
+s2 = Student("Rahul", 21)
 
-# print(s1.display_details())
-# print(s2.display_details())
+print(s1.display_details())
+print(s2.display_details())
 
-# Student.change_college("Gujarat University")
+Student.change_college("Gujarat University")
 
-# print(s1.display_details())
-# print(s2.display_details())
+print(s1.display_details())
+print(s2.display_details())
 
 
 
@@ -248,31 +248,31 @@
 #* Change company to "Infosys".
 #* Display details again.
 
-# class Employee:
+class Employee:
 
-#     company_name = "TCS"
+    company_name = "TCS"
 
-#     def __init__(self, name, salary):
-#         self.name = name
-#         self.salary = salary
+    def __init__(self, name, salary):
+        self.name = name
+        self.salary = salary
 
-#     def display_employee(self):
-#         return f"Company Name : {Employee.company_name}, Employee Name : {self.name}, Salary : {self.salary}"
+    def display_employee(self):
+        return f"Company Name : {Employee.company_name}, Employee Name : {self.name}, Salary : {self.salary}"
 
-#     @classmethod
-#     def change_company(cls, new_company):
-#         cls.company_name = new_company
+    @classmethod
+    def change_company(cls, new_company):
+        cls.company_name = new_company
 
-# e1 = Employee('Pravin', 45000)
-# e2 = Employee('Rahul', 38000)
+e1 = Employee('Pravin', 45000)
+e2 = Employee('Rahul', 38000)
 
-# print(e1.display_employee())
-# print(e2.display_employee())
+print(e1.display_employee())
+print(e2.display_employee())
 
-# Employee.change_company("Infosys")
+Employee.change_company("Infosys")
 
-# print(e1.display_employee())
-# print(e2.display_employee())
+print(e1.display_employee())
+print(e2.display_employee())
 
 
 
@@ -296,31 +296,31 @@
 #* Change wheels to 6.
 #* Display details again.
 
-# class Car:
+class Car:
 
-#     wheels = 4
+    wheels = 4
 
-#     def __init__(self, company, model):
-#         self.company = company
-#         self.model = model
+    def __init__(self, company, model):
+        self.company = company
+        self.model = model
 
-#     def display_car(self):
-#         return f"Company Name : {self.company}, Model : {self.model}, Wheels : {Car.wheels}"
+    def display_car(self):
+        return f"Company Name : {self.company}, Model : {self.model}, Wheels : {Car.wheels}"
 
-#     @classmethod
-#     def change_wheels(cls, new_wheels):
-#         cls.wheels = new_wheels
+    @classmethod
+    def change_wheels(cls, new_wheels):
+        cls.wheels = new_wheels
 
-# c1 = Car('BMW', 'X5')
-# c2 = Car('Audi', 'A6')
+c1 = Car('BMW', 'X5')
+c2 = Car('Audi', 'A6')
 
-# print(c1.display_car())
-# print(c2.display_car())
+print(c1.display_car())
+print(c2.display_car())
 
-# Car.change_wheels(6)
+Car.change_wheels(6)
 
-# print(c1.display_car())
-# print(c2.display_car())
+print(c1.display_car())
+print(c2.display_car())
 
 
 
@@ -345,31 +345,31 @@
 #* Change bank to "HDFC Bank".
 #* Display details again.
 
-# class BankAccount:
+class BankAccount:
 
-#     bank_name = "State Bank of India"
+    bank_name = "State Bank of India"
 
-#     def __init__(self, account_holder, balance):
-#         self.account_holder = account_holder
-#         self.balance = balance
+    def __init__(self, account_holder, balance):
+        self.account_holder = account_holder
+        self.balance = balance
 
-#     def display_account(self):
-#         return f"Bank Name : {BankAccount.bank_name}, Name : {self.account_holder}, Balance : {self.balance}" 
+    def display_account(self):
+        return f"Bank Name : {BankAccount.bank_name}, Name : {self.account_holder}, Balance : {self.balance}" 
 
-#     @classmethod
-#     def change_bank(cls, new_bank):
-#         cls.bank_name = new_bank
+    @classmethod
+    def change_bank(cls, new_bank):
+        cls.bank_name = new_bank
 
-# b1 = BankAccount('Pravin', 50000)
-# b2 = BankAccount('Rahul', 35000)
+b1 = BankAccount('Pravin', 50000)
+b2 = BankAccount('Rahul', 35000)
 
-# print(b1.display_account())
-# print(b2.display_account())
+print(b1.display_account())
+print(b2.display_account())
 
-# BankAccount.change_bank("HDFC Bank")
+BankAccount.change_bank("HDFC Bank")
 
-# print(b1.display_account())
-# print(b2.display_account())
+print(b1.display_account())
+print(b2.display_account())
 
 
 
@@ -394,31 +394,31 @@
 #* Change brand type to "Gaming Laptop".
 #* Display details again.
 
-# class Laptop:
+class Laptop:
 
-#     brand_type = "Business Laptop"
+    brand_type = "Business Laptop"
 
-#     def __init__(self, brand, processor):
-#         self.brand = brand
-#         self.processor = processor
+    def __init__(self, brand, processor):
+        self.brand = brand
+        self.processor = processor
 
-#     def display_specs(self):
-#         return f"Laptop Name : {self.brand}, Processor : {self.processor}, Brand Type : {Laptop.brand_type}"
+    def display_specs(self):
+        return f"Laptop Name : {self.brand}, Processor : {self.processor}, Brand Type : {Laptop.brand_type}"
 
-#     @classmethod
-#     def change_brand_type(cls, new_type):
-#         cls.brand_type = new_type
+    @classmethod
+    def change_brand_type(cls, new_type):
+        cls.brand_type = new_type
 
-# l1 = Laptop('Dell', 'Intel i5')
-# l2 = Laptop('HP', 'Intel i7')
+l1 = Laptop('Dell', 'Intel i5')
+l2 = Laptop('HP', 'Intel i7')
 
-# print(l1.display_specs())
-# print(l2.display_specs())
+print(l1.display_specs())
+print(l2.display_specs())
 
-# Laptop.change_brand_type('Gaming Laptop')
+Laptop.change_brand_type('Gaming Laptop')
 
-# print(l1.display_specs())
-# print(l2.display_specs())
+print(l1.display_specs())
+print(l2.display_specs())
 
 
 
@@ -442,31 +442,31 @@
 #* Change language to "Hindi".
 #* Display details again.
 
-# class Book:
+class Book:
 
-#     language = "English"
+    language = "English"
 
-#     def __init__(self, title, author):
-#         self.title = title
-#         self.author = author
+    def __init__(self, title, author):
+        self.title = title
+        self.author = author
 
-#     def display_book(self):
-#         return f"Book Title : {self.title}, Name of Author : {self.author}, Language : {Book.language}"
+    def display_book(self):
+        return f"Book Title : {self.title}, Name of Author : {self.author}, Language : {Book.language}"
 
-#     @classmethod
-#     def change_language(cls, new_language):
-#         cls.language = new_language
+    @classmethod
+    def change_language(cls, new_language):
+        cls.language = new_language
 
-# b1 = Book('Python Basics', 'Guido van Rossum')
-# b2 = Book('Data Science', 'Andrew Ng')
+b1 = Book('Python Basics', 'Guido van Rossum')
+b2 = Book('Data Science', 'Andrew Ng')
 
-# print(b1.display_book())
-# print(b2.display_book())
+print(b1.display_book())
+print(b2.display_book())
 
-# Book.change_language('Hindi')
+Book.change_language('Hindi')
 
-# print(b1.display_book())
-# print(b2.display_book())
+print(b1.display_book())
+print(b2.display_book())
 
 
 
@@ -490,31 +490,31 @@
 #* Change hospital name to "Apollo Hospital".
 #* Display details again.
 
-# class Patient:
+class Patient:
 
-#     hospital_name = "City Hospital"
+    hospital_name = "City Hospital"
 
-#     def __init__(self, patient_name, age):
-#         self.patient_name = patient_name
-#         self.age = age
+    def __init__(self, patient_name, age):
+        self.patient_name = patient_name
+        self.age = age
 
-#     def display_patient(self):
-#         return f"Hospital Name = {Patient.hospital_name}, Patient Name : {self.patient_name}, Age : {self.age}"
+    def display_patient(self):
+        return f"Hospital Name = {Patient.hospital_name}, Patient Name : {self.patient_name}, Age : {self.age}"
 
-#     @classmethod
-#     def change_hospital(cls, new_name):
-#         cls.hospital_name = new_name
+    @classmethod
+    def change_hospital(cls, new_name):
+        cls.hospital_name = new_name
 
-# p1 = Patient('Pravin', 22)
-# p2 = Patient('Rahul', 21)
+p1 = Patient('Pravin', 22)
+p2 = Patient('Rahul', 21)
 
-# print(p1.display_patient())
-# print(p2.display_patient())
+print(p1.display_patient())
+print(p2.display_patient())
 
-# Patient.change_hospital('Apollo Hospital')
+Patient.change_hospital('Apollo Hospital')
 
-# print(p1.display_patient())
-# print(p2.display_patient())
+print(p1.display_patient())
+print(p2.display_patient())
 
 
 
@@ -538,31 +538,31 @@
 #* Change bank to "ICICI Bank".
 #* Display balances again.
 
-# class ATM:
+class ATM:
 
-#     bank_name = "HDFC Bank"
+    bank_name = "HDFC Bank"
 
-#     def __init__(self, account_holder, balance):
-#         self.account_holder = account_holder
-#         self.balance = balance
+    def __init__(self, account_holder, balance):
+        self.account_holder = account_holder
+        self.balance = balance
 
-#     def display_balance(self):
-#         return f"Bank Name : {ATM.bank_name}, Name : {self.account_holder}, Balance : {self.balance}"
+    def display_balance(self):
+        return f"Bank Name : {ATM.bank_name}, Name : {self.account_holder}, Balance : {self.balance}"
 
-#     @classmethod
-#     def change_bank(cls, new_bank):
-#         cls.bank_name = new_bank
+    @classmethod
+    def change_bank(cls, new_bank):
+        cls.bank_name = new_bank
 
-# a1 = ATM('Pravin', 40000)
-# a2 = ATM('Rahul', 30000)
+a1 = ATM('Pravin', 40000)
+a2 = ATM('Rahul', 30000)
 
-# print(a1.display_balance())
-# print(a2.display_balance())
+print(a1.display_balance())
+print(a2.display_balance())
 
-# ATM.change_bank('ICICI Bank')
+ATM.change_bank('ICICI Bank')
 
-# print(a1.display_balance())
-# print(a2.display_balance())
+print(a1.display_balance())
+print(a2.display_balance())
 
 
 
@@ -586,31 +586,31 @@
 #* Change university to "GTU".
 #* Display details again.
 
-# class CollegeStudent:
+class CollegeStudent:
 
-#     university = "Monark University"
+    university = "Monark University"
 
-#     def __init__(self, name, roll_no):
-#         self.name = name
-#         self.roll_no = roll_no
+    def __init__(self, name, roll_no):
+        self.name = name
+        self.roll_no = roll_no
 
-#     def display_student(self):
-#         return f"University Name : {CollegeStudent.university}, STUDENT Name : {self.name}, Roll No. : {self.roll_no}"
+    def display_student(self):
+        return f"University Name : {CollegeStudent.university}, STUDENT Name : {self.name}, Roll No. : {self.roll_no}"
 
-#     @classmethod
-#     def change_university(cls, new_university):
-#         cls.university = new_university
+    @classmethod
+    def change_university(cls, new_university):
+        cls.university = new_university
 
-# c1 = CollegeStudent('Pravin', 101)
-# c2 = CollegeStudent('Rahul', 102)
+c1 = CollegeStudent('Pravin', 101)
+c2 = CollegeStudent('Rahul', 102)
 
-# print(c1.display_student())
-# print(c2.display_student())
+print(c1.display_student())
+print(c2.display_student())
 
-# CollegeStudent.change_university('GTU')
+CollegeStudent.change_university('GTU')
 
-# print(c1.display_student())
-# print(c2.display_student())
+print(c1.display_student())
+print(c2.display_student())
 
 
 
@@ -634,28 +634,28 @@
 #* Change country to "Japan".
 #* Display details again.
 
-# class Mobile:
+class Mobile:
 
-#     country = "India"
+    country = "India"
 
-#     def __init__(self, company, model):
-#         self.company = company
-#         self.model = model
+    def __init__(self, company, model):
+        self.company = company
+        self.model = model
 
-#     def display_mobile(self):
-#         return f"Country {Mobile.country}, Company Name : {self.company}, Model : {self.model}"
+    def display_mobile(self):
+        return f"Country {Mobile.country}, Company Name : {self.company}, Model : {self.model}"
 
-#     @classmethod
-#     def change_country(cls, new_country):
-#         cls.country = new_country
+    @classmethod
+    def change_country(cls, new_country):
+        cls.country = new_country
 
-# m1 = Mobile('Samsung', 'Galaxy S25')
-# m2 = Mobile('Apple', 'iPhone 17')
+m1 = Mobile('Samsung', 'Galaxy S25')
+m2 = Mobile('Apple', 'iPhone 17')
 
-# print(m1.display_mobile())
-# print(m2.display_mobile())
+print(m1.display_mobile())
+print(m2.display_mobile())
 
-# Mobile.change_country("Japan")
+Mobile.change_country("Japan")
 
-# print(m1.display_mobile())
-# print(m2.display_mobile())
+print(m1.display_mobile())
+print(m2.display_mobile())
