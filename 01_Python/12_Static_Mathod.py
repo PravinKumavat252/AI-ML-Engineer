@@ -235,18 +235,18 @@
 #~ Create a static method subtract(a, b) that returns the subtraction of two numbers.
 #~ Call both methods using the class name.
 
-# class Calculator:
+class Calculator:
 
-#     @staticmethod
-#     def add(a, b):
-#         return f"Addition : {a} + {b} : {a + b}"
+    @staticmethod
+    def add(a, b):
+        return f"Addition : {a} + {b} : {a + b}"
 
-#     @staticmethod
-#     def subtract(a, b):
-#         return f"subtraction : {a} - {b} : {a - b}"
+    @staticmethod
+    def subtract(a, b):
+        return f"subtraction : {a} - {b} : {a - b}"
 
-# print(Calculator.add(10, 5))
-# print(Calculator.subtract(10, 5))
+print(Calculator.add(10, 5))
+print(Calculator.subtract(10, 5))
 
 
     
@@ -261,17 +261,17 @@
 #~ Otherwise, return "Odd".
 #~ Create two test cases.
 
-# class Number:
+class Number:
 
-#     @staticmethod
-#     def check_even_odd(num):
-#         if num % 2 == 0:
-#             return f"{num} is even"
-#         else:
-#             return f"{num} is odd"
+    @staticmethod
+    def check_even_odd(num):
+        if num % 2 == 0:
+            return f"{num} is even"
+        else:
+            return f"{num} is odd"
 
-# print(Number.check_even_odd(10))
-# print(Number.check_even_odd(15))
+print(Number.check_even_odd(10))
+print(Number.check_even_odd(15))
 
 
 
@@ -286,14 +286,14 @@
 #* fahrenheit = (celsius * 9/5) + 32
 #* Return the Fahrenheit value.
 
-# class Temperature:
+class Temperature:
 
-#     @staticmethod
-#     def celsius_to_fahrenheit(celsius):
-#         fahrenhrit = (celsius * 9 / 5) + 32
-#         return fahrenhrit
+    @staticmethod
+    def celsius_to_fahrenheit(celsius):
+        fahrenhrit = (celsius * 9 / 5) + 32
+        return fahrenhrit
 
-# print(Temperature.celsius_to_fahrenheit(25))
+print(Temperature.celsius_to_fahrenheit(25))
 
 
 
@@ -308,14 +308,14 @@
 #~ percentage = (marks / total_marks) * 100
 #~ Return the percentage.
 
-# class Result:
+class Result:
 
-#     @staticmethod
-#     def calculate_percentage(marks, total_marks):
-#         percentage = (marks / total_marks) * 100
-#         return percentage
+    @staticmethod
+    def calculate_percentage(marks, total_marks):
+        percentage = (marks / total_marks) * 100
+        return percentage
 
-# print(Result.calculate_percentage(450, 500))
+print(Result.calculate_percentage(450, 500))
 
 
 
@@ -334,14 +334,14 @@
 #~ Otherwise:
 #~ "Not Eligible for Loan"
 
-# class Bank:
+class Bank:
 
-#     @staticmethod
-#     def check_loan_eligibility(age, salary):
-#         if age >= 21 and salary >= 30000:
-#             return "Eligible for Loan"
-#         else:
-#             return "Not Eligible for Loan"
+    @staticmethod
+    def check_loan_eligibility(age, salary):
+        if age >= 21 and salary >= 30000:
+            return "Eligible for Loan"
+        else:
+            return "Not Eligible for Loan"
 
-# print(Bank.check_loan_eligibility(25, 50000))
+print(Bank.check_loan_eligibility(25, 50000))
 
