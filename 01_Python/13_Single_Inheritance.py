@@ -193,20 +193,20 @@
 
 #* Create one object of Dog and call both methods.
 
-# class Animal:
+class Animal:
 
-#     def eat(self):
-#         print("Animal is Eating")
+    def eat(self):
+        print("Animal is Eating")
 
-# class Dog(Animal):
+class Dog(Animal):
 
-#     def bark(self):
-#         print("Dog is Barking")
+    def bark(self):
+        print("Dog is Barking")
 
-# dog = Dog()
+dog = Dog()
 
-# dog.eat()
-# dog.bark()
+dog.eat()
+dog.bark()
 
 
 
@@ -219,20 +219,20 @@
 #* Create a method drive().
 #* Create one object of Car and call both methods.
 
-# class Vehicle:
+class Vehicle:
 
-#     def start_engine(self):
-#         print("Engine Starting...")
+    def start_engine(self):
+        print("Engine Starting...")
 
-# class Car(Vehicle):
+class Car(Vehicle):
 
-#     def drive(self):
-#         print("Driving...")
+    def drive(self):
+        print("Driving...")
 
-# car = Car()
+car = Car()
 
-# car.start_engine()
-# car.drive()
+car.start_engine()
+car.drive()
 
 
 
@@ -252,28 +252,28 @@
 #~ Create a method display_student().
 #~ Create one object and display all details.
 
-# class Person:
+class Person:
 
-#     def __init__(self, name, age):
-#         self.name = name
-#         self.age = age
+    def __init__(self, name, age):
+        self.name = name
+        self.age = age
 
-#     def display_person(self):
-#         print(f"Student Name : {self.name}, Age : {self.age}")
+    def display_person(self):
+        print(f"Student Name : {self.name}, Age : {self.age}")
 
-# class Student(Person):
+class Student(Person):
 
-#     def __init__(self, name, age, course):
-#         super().__init__(name, age)
-#         self.course = course
+    def __init__(self, name, age, course):
+        super().__init__(name, age)
+        self.course = course
 
-#     def display_student(self):
-#         print(f"Student Name : {self.name}, Age : {self.age}, Course : {self.course}")
+    def display_student(self):
+        print(f"Student Name : {self.name}, Age : {self.age}, Course : {self.course}")
 
-# pravin = Student("Pravin", 22, "M.sc")
+pravin = Student("Pravin", 22, "M.sc")
 
-# pravin.display_person()
-# pravin.display_student()
+pravin.display_person()
+pravin.display_student()
 
 
 
@@ -293,28 +293,28 @@
 #* Create a method display_manager().
 #* Display all information.
 
-# class Employee:
+class Employee:
 
-#     def __init__(self, name, salary):
-#         self.name = name
-#         self.salary = salary
+    def __init__(self, name, salary):
+        self.name = name
+        self.salary = salary
 
-#     def display_employee(self):
-#         print(f"Employee Name : {self.name}, Salary : {self.salary}")
+    def display_employee(self):
+        print(f"Employee Name : {self.name}, Salary : {self.salary}")
 
-# class Manager(Employee):
+class Manager(Employee):
 
-#     def __init__(self, name, salary, department):
-#         super().__init__(name, salary)
-#         self.department = department
+    def __init__(self, name, salary, department):
+        super().__init__(name, salary)
+        self.department = department
 
-#     def display_manager(self):
-#         print(f"Employee Name : {self.name}, Salary : {self.salary}, Department : {self.department}")
+    def display_manager(self):
+        print(f"Employee Name : {self.name}, Salary : {self.salary}, Department : {self.department}")
 
-# emp = Manager('Pravin', 38000, 'IT')
+emp = Manager('Pravin', 38000, 'IT')
 
-# emp.display_employee()
-# emp.display_manager()
+emp.display_employee()
+emp.display_manager()
 
 
 
@@ -332,24 +332,24 @@
 
 #* Create one object and call all methods.
 
-# class Mobile:
+class Mobile:
 
-#     def call(self):
-#         print("Calling...")
+    def call(self):
+        print("Calling...")
 
-# class Smartphone(Mobile):
+class Smartphone(Mobile):
 
-#     def camera(self):
-#         print("Camera has 50px")
+    def camera(self):
+        print("Camera has 50px")
 
-#     def internet(self):
-#         print("Supports 5G Internet")
+    def internet(self):
+        print("Supports 5G Internet")
 
-# samsung = Smartphone()
+samsung = Smartphone()
 
-# samsung.call()
-# samsung.camera()
-# samsung.internet()
+samsung.call()
+samsung.camera()
+samsung.internet()
 
 
 
@@ -369,29 +369,29 @@
 #* Create a method show_interest().
 #* Display all details.
 
-# class BankAccount:
+class BankAccount:
 
-#     def __init__(self, account_holder, balance):
-#         self.account_holder = account_holder
-#         self.balance = balance
+    def __init__(self, account_holder, balance):
+        self.account_holder = account_holder
+        self.balance = balance
 
-#     def show_balance(self):
-#         print(f"Account Holder Name : {self.account_holder}, Balance : {self.balance}")
+    def show_balance(self):
+        print(f"Account Holder Name : {self.account_holder}, Balance : {self.balance}")
 
-# class SavingsAccount(BankAccount):
+class SavingsAccount(BankAccount):
 
-#     def __init__(self, account_holder, balance, interest_rate):
-#         super().__init__(account_holder, balance)
-#         self.interest_rate = interest_rate
+    def __init__(self, account_holder, balance, interest_rate):
+        super().__init__(account_holder, balance)
+        self.interest_rate = interest_rate
 
-#     def show_interest(self):
-#         self.show_balance()
-#         print(f"Interest Rate : {self.interest_rate}%")
+    def show_interest(self):
+        self.show_balance()
+        print(f"Interest Rate : {self.interest_rate}%")
 
-# saving = SavingsAccount('Pravin', 35000, 12)
+saving = SavingsAccount('Pravin', 35000, 12)
 
-# saving.show_balance()
-# saving.show_interest()
+saving.show_balance()
+saving.show_interest()
 
 
 
@@ -412,28 +412,28 @@
 #* Create a method display_branch().
 #* Display all information.
 
-# class College:
+class College:
 
-#     def __init__(self, college_name, city):
-#         self.college_name = college_name
-#         self.city = city
+    def __init__(self, college_name, city):
+        self.college_name = college_name
+        self.city = city
 
-#     def display_college(self):
-#         print(f"College Name : {self.college_name}, City : {self.city}")
+    def display_college(self):
+        print(f"College Name : {self.college_name}, City : {self.city}")
 
-# class EngineeringCollege(College):
+class EngineeringCollege(College):
 
-#     def __init__(self, college_name, city, branch):
-#         super().__init__(college_name, city)
-#         self.branch = branch
+    def __init__(self, college_name, city, branch):
+        super().__init__(college_name, city)
+        self.branch = branch
 
-#     def display_branch(self):
-#         self.display_college()
-#         print(f"Branch : {self.branch}")
+    def display_branch(self):
+        self.display_college()
+        print(f"Branch : {self.branch}")
 
-# cs = EngineeringCollege('Monark University', 'Ahmedabad', 'M.sc')
+cs = EngineeringCollege('Monark University', 'Ahmedabad', 'M.sc')
 
-# cs.display_branch()
+cs.display_branch()
 
 
 
@@ -453,28 +453,28 @@
 #* Create a method calculate_area().
 #* Display the shape and area.
 
-# class Shape:
+class Shape:
 
-#     def show_shape(self):
-#         print("This is shape")
+    def show_shape(self):
+        print("This is shape")
 
-# class Rectangle(Shape):
+class Rectangle(Shape):
 
-#     def __init__(self, length, width):
-#         self.length = length
-#         self.width = width
+    def __init__(self, length, width):
+        self.length = length
+        self.width = width
 
-#     def calculate_area(self):
-#         return self.length * self.width
+    def calculate_area(self):
+        return self.length * self.width
 
-#     def show_shape(self):
-#         super().show_shape()                     
-#         print(f"Rectangle: length = {self.length}, width = {self.width}")
-#         print(f"Area = {self.calculate_area()}")
+    def show_shape(self):
+        super().show_shape()                     
+        print(f"Rectangle: length = {self.length}, width = {self.width}")
+        print(f"Area = {self.calculate_area()}")
 
-# rec = Rectangle(12, 10)
+rec = Rectangle(12, 10)
 
-# rec.show_shape()
+rec.show_shape()
 
 
 
@@ -494,28 +494,28 @@
 #* Create a method display_file_size().
 #* Display all information.
 
-# class Book:
+class Book:
 
-#     def __init__(self, title, author):
-#         self.title = title
-#         self.author = author
+    def __init__(self, title, author):
+        self.title = title
+        self.author = author
 
-#     def display_book(self):
-#         print(f"Book Title : {self.title}, Author Name : {self.author}")
+    def display_book(self):
+        print(f"Book Title : {self.title}, Author Name : {self.author}")
 
-# class Ebook(Book):
+class Ebook(Book):
 
-#     def __init__(self, title, author, file_size):
-#         super().__init__(title, author)
-#         self.file_size = file_size
+    def __init__(self, title, author, file_size):
+        super().__init__(title, author)
+        self.file_size = file_size
 
-#     def display_file_size(self):
-#         self.display_book()
-#         print(f"Ebook File Size : {self.file_size} MB")
+    def display_file_size(self):
+        self.display_book()
+        print(f"Ebook File Size : {self.file_size} MB")
 
-# book = Ebook("Python Basics", "Guido van Rossum", 136)
+book = Ebook("Python Basics", "Guido van Rossum", 136)
 
-# book.display_file_size()
+book.display_file_size()
 
 
 
@@ -537,27 +537,27 @@
 #* Create a method display_doctor().
 #* Display all information.
 
-# class Hospital:
+class Hospital:
 
-#     def __init__(self, hospital_name, location):
-#         self.hospital_name = hospital_name
-#         self.location = location
+    def __init__(self, hospital_name, location):
+        self.hospital_name = hospital_name
+        self.location = location
 
-#     def display_hospital(self):
-#         print(f"Hospital Name : {self.hospital_name}, Location : {self.location}")
+    def display_hospital(self):
+        print(f"Hospital Name : {self.hospital_name}, Location : {self.location}")
 
-# class Doctor(Hospital):
+class Doctor(Hospital):
 
-#     def __init__(self, hospital_name, location, doctor_name, specialization):
-#         super().__init__(hospital_name, location)
-#         self.doctor_name = doctor_name
-#         self.specialization = specialization
+    def __init__(self, hospital_name, location, doctor_name, specialization):
+        super().__init__(hospital_name, location)
+        self.doctor_name = doctor_name
+        self.specialization = specialization
 
-#     def display_doctor(self):
-#         self.display_hospital()
-#         print(f"Doctor Name : {self.doctor_name}, Specialization in : {self.specialization}")
+    def display_doctor(self):
+        self.display_hospital()
+        print(f"Doctor Name : {self.doctor_name}, Specialization in : {self.specialization}")
 
 
-# doctor = Doctor("Apollo Hospital", "Ahmedabad", "Dr. Raj Patel", "Cardiologist")
+doctor = Doctor("Apollo Hospital", "Ahmedabad", "Dr. Raj Patel", "Cardiologist")
 
-# doctor.display_doctor()
+doctor.display_doctor()
