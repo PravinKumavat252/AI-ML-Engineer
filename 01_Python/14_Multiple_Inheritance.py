@@ -244,25 +244,25 @@
 #* Create a class named `Child` that inherits from both classes.
 #* Create one object and call both methods.
 
-# class Father:
+class Father:
 
-#     def house(self):
-#         print("Father owns a House")
+    def house(self):
+        print("Father owns a House")
 
-# class Mother:
+class Mother:
 
-#     def car(self):
-#         print("Mother owns a Car")
+    def car(self):
+        print("Mother owns a Car")
 
-# class Child(Father, Mother):
-#     pass
+class Child(Father, Mother):
+    pass
 
-# child = Child()
+child = Child()
 
-# child.house()
-# child.car()
+child.house()
+child.car()
 
-# print(Child.mro())
+print(Child.mro())
 
 
 
@@ -283,28 +283,28 @@
 
 #* Call all three methods.
 
-# class Camera:
+class Camera:
 
-#     def take_photo(self):
-#         print("Taking Photos")
+    def take_photo(self):
+        print("Taking Photos")
 
-# class MusicPlayer:
+class MusicPlayer:
 
-#     def play_music(self):
-#         print("Playing Music")
+    def play_music(self):
+        print("Playing Music")
 
-# class SmartPhone(Camera, MusicPlayer):
+class SmartPhone(Camera, MusicPlayer):
 
-#     def make_call(self):
-#         print("Calling...")
+    def make_call(self):
+        print("Calling...")
 
-# samsung = SmartPhone()
+samsung = SmartPhone()
 
-# samsung.take_photo()
-# samsung.play_music()
-# samsung.make_call()
+samsung.take_photo()
+samsung.play_music()
+samsung.make_call()
 
-# print(SmartPhone.mro())
+print(SmartPhone.mro())
 
 
 
@@ -327,38 +327,38 @@
 #* Create a class named `SchoolStaff` that inherits from both classes.
 #* Display all information.
 
-# class Teacher:
+class Teacher:
 
-#     def __init__(self, teacher_name):
-#         self.teacher_name = teacher_name
+    def __init__(self, teacher_name):
+        self.teacher_name = teacher_name
 
-#     def display_teacher(self):
-#         print(f"Teacher Name : {self.teacher_name}")
+    def display_teacher(self):
+        print(f"Teacher Name : {self.teacher_name}")
 
-# class SportsCoach:
+class SportsCoach:
 
-#     def __init__(self, sport_name):
-#         self.sport_name = sport_name
+    def __init__(self, sport_name):
+        self.sport_name = sport_name
 
-#     def display_sport(self):
-#         print(f"Sport Name : {self.sport_name}")
+    def display_sport(self):
+        print(f"Sport Name : {self.sport_name}")
 
 
-# class SchoolStaff(Teacher, SportsCoach):
+class SchoolStaff(Teacher, SportsCoach):
 
-#     def __init__(self, teacher_name, sport_name):
-#         Teacher.__init__(self, teacher_name)
-#         SportsCoach.__init__(self, sport_name)
+    def __init__(self, teacher_name, sport_name):
+        Teacher.__init__(self, teacher_name)
+        SportsCoach.__init__(self, sport_name)
 
-#     def display_schoolstaff(self):
-#         self.display_teacher()
-#         self.display_sport()
+    def display_schoolstaff(self):
+        self.display_teacher()
+        self.display_sport()
 
-# school = SchoolStaff('Himanshu', 'Kho-Kho')
+school = SchoolStaff('Himanshu', 'Kho-Kho')
 
-# school.display_schoolstaff()
+school.display_schoolstaff()
 
-# print(SchoolStaff.mro())
+print(SchoolStaff.mro())
 
 
 
@@ -382,36 +382,36 @@
 #* Create a class named `OfficeSetup` that inherits from both classes.
 #* Display all information.
 
-# class Laptop:
+class Laptop:
 
-#     def __init__(self, laptop_brand):
-#         self.laptop_brand = laptop_brand
+    def __init__(self, laptop_brand):
+        self.laptop_brand = laptop_brand
 
-#     def display_laptop(self):
-#         print(f"Laptop Brand : {self.laptop_brand}")
+    def display_laptop(self):
+        print(f"Laptop Brand : {self.laptop_brand}")
 
-# class Printer:
+class Printer:
 
-#     def __init__(self, printer_brand):
-#         self.printer_brand = printer_brand
+    def __init__(self, printer_brand):
+        self.printer_brand = printer_brand
 
-#     def display_printer(self):
-#         print(f"Printer Brand : {self.printer_brand}")
+    def display_printer(self):
+        print(f"Printer Brand : {self.printer_brand}")
 
-# class OfficeSetup(Laptop, Printer):
+class OfficeSetup(Laptop, Printer):
 
-#     def __init__(self, laptop_brand, printer_brand):
-#         Laptop.__init__(self, laptop_brand)
-#         Printer.__init__(self, printer_brand)
+    def __init__(self, laptop_brand, printer_brand):
+        Laptop.__init__(self, laptop_brand)
+        Printer.__init__(self, printer_brand)
 
-#     def display_OfficeSetup(self):
-#         self.display_laptop()
-#         self.display_printer()
+    def display_OfficeSetup(self):
+        self.display_laptop()
+        self.display_printer()
 
-# office = OfficeSetup('Acer', 'HP')
+office = OfficeSetup('Acer', 'HP')
 
-# office.display_OfficeSetup()
-# print(OfficeSetup.mro())
+office.display_OfficeSetup()
+print(OfficeSetup.mro())
 
     
 
@@ -437,38 +437,38 @@
 #* Create a class named `Intern` that inherits from both classes.
 #* Display all details.
 
-# class Student:
+class Student:
 
-#     def __init__(self, student_name, course):
-#         self.student_name = student_name
-#         self.course = course
+    def __init__(self, student_name, course):
+        self.student_name = student_name
+        self.course = course
 
-#     def display_student(self):
-#         print(f"Student Name : {self.student_name}, Course : {self.course}")
+    def display_student(self):
+        print(f"Student Name : {self.student_name}, Course : {self.course}")
 
-# class Employee:
+class Employee:
 
-#     def __init__(self, company_name, salary):
-#         self.company_name = company_name
-#         self.salary = salary
+    def __init__(self, company_name, salary):
+        self.company_name = company_name
+        self.salary = salary
 
-#     def display_employee(self):
-#         print(f"Company Name : {self.company_name}, Salary : {self.salary}")
+    def display_employee(self):
+        print(f"Company Name : {self.company_name}, Salary : {self.salary}")
 
-# class Intern(Student, Employee):
+class Intern(Student, Employee):
 
-#     def __init__(self, student_name, course, company_name, salary):
-#         Student.__init__(self, student_name, course)
-#         Employee.__init__(self, company_name, salary)
+    def __init__(self, student_name, course, company_name, salary):
+        Student.__init__(self, student_name, course)
+        Employee.__init__(self, company_name, salary)
 
-#     def display_intern(self):
-#         self.display_student()
-#         self.display_employee()
+    def display_intern(self):
+        self.display_student()
+        self.display_employee()
 
-# scholar = Intern('Pravin', "M.sc", "Communication Craft", 30000)
+scholar = Intern('Pravin', "M.sc", "Communication Craft", 30000)
 
-# scholar.display_intern()
-# print(Intern.mro())
+scholar.display_intern()
+print(Intern.mro())
 
 
 
@@ -489,30 +489,30 @@
 
 #* Call all methods.
 
-# class Engine:
+class Engine:
 
-#     def start_engine(self):
-#         print("Start Engine")
+    def start_engine(self):
+        print("Start Engine")
 
-# class GPS:
+class GPS:
 
-#     def show_location(self):
-#         print("Locating...")
+    def show_location(self):
+        print("Locating...")
 
-# class Car(Engine, GPS):
+class Car(Engine, GPS):
 
-#     def drive(self):
-#         print("Car is Driving")
+    def drive(self):
+        print("Car is Driving")
 
-#     def display_car(self):
-#         self.drive()
-#         self.start_engine()
-#         self.show_location()
+    def display_car(self):
+        self.drive()
+        self.start_engine()
+        self.show_location()
 
-# honda = Car()
+honda = Car()
 
-# honda.display_car()
-# print(Car.mro())
+honda.display_car()
+print(Car.mro())
 
 
 
@@ -535,36 +535,36 @@
 #* Create a class named `Customer` that inherits from both classes.
 #* Display all information.
 
-# class Bank:
+class Bank:
 
-#     def __init__(self, bank_name):
-#         self.bank_name = bank_name
+    def __init__(self, bank_name):
+        self.bank_name = bank_name
 
-#     def display_bank(self):
-#         print(f"Bank Name : {self.bank_name}")
+    def display_bank(self):
+        print(f"Bank Name : {self.bank_name}")
 
-# class Insurance:
+class Insurance:
 
-#     def __init__(self, insurance_company):
-#         self.insurance_company = insurance_company
+    def __init__(self, insurance_company):
+        self.insurance_company = insurance_company
 
-#     def display_insurance(self):
-#         print(f"Insurance Company Name : {self.insurance_company}")
+    def display_insurance(self):
+        print(f"Insurance Company Name : {self.insurance_company}")
 
-# class Customer(Bank, Insurance):
+class Customer(Bank, Insurance):
 
-#     def __init__(self, bank_name, insurance_company):
-#         Bank.__init__(self, bank_name)
-#         Insurance.__init__(self, insurance_company)
+    def __init__(self, bank_name, insurance_company):
+        Bank.__init__(self, bank_name)
+        Insurance.__init__(self, insurance_company)
 
-#     def display_customer(self):
-#         self.display_bank()
-#         self.display_insurance()
+    def display_customer(self):
+        self.display_bank()
+        self.display_insurance()
 
-# pravin = Customer('IOB', 'LIC')
+pravin = Customer('IOB', 'LIC')
 
-# pravin.display_customer()
-# print(Customer.mro())
+pravin.display_customer()
+print(Customer.mro())
 
 
 
