@@ -290,26 +290,26 @@
 
 #* Create one object of Dog and call all three methods.
 
-# class Animal:
+class Animal:
 
-#     def eat(self):
-#         print("Animal is Eating")
+    def eat(self):
+        print("Animal is Eating")
 
-# class Mammal(Animal):
+class Mammal(Animal):
 
-#     def walk(self):
-#         print("Mammal is Walking")
+    def walk(self):
+        print("Mammal is Walking")
 
-# class Dog(Mammal):
+class Dog(Mammal):
 
-#     def bark(self):
-#         print("Dog is Barking")
+    def bark(self):
+        print("Dog is Barking")
 
-# dog = Dog()
+dog = Dog()
 
-# dog.eat()
-# dog.walk()
-# dog.bark()
+dog.eat()
+dog.walk()
+dog.bark()
 
 
 
@@ -339,34 +339,34 @@
 
 #* Create one object and display:
 
-# class Person:
+class Person:
 
-#     def __init__(self, name):
-#         self.name = name
+    def __init__(self, name):
+        self.name = name
 
-#     def display_person(self):
-#         return(f"Person Name : {self.name}")
+    def display_person(self):
+        return(f"Person Name : {self.name}")
 
-# class Employee(Person):
+class Employee(Person):
 
-#     def __init__(self, name, salary):
-#         Person.__init__(self, name)
-#         self.salary = salary
+    def __init__(self, name, salary):
+        Person.__init__(self, name)
+        self.salary = salary
 
-#     def display_employee(self):
-#         return(f"Salary : {self.salary}")
+    def display_employee(self):
+        return(f"Salary : {self.salary}")
 
-# class Manager(Employee):
+class Manager(Employee):
 
-#     def __init__(self, name, salary, department):
-#         Employee.__init__(self, name, salary)
-#         self.department = department
+    def __init__(self, name, salary, department):
+        Employee.__init__(self, name, salary)
+        self.department = department
 
-#     def display_manager(self):
-#         print(f"{self.display_person()}, {self.display_employee()}, Department : {self.department}")
+    def display_manager(self):
+        print(f"{self.display_person()}, {self.display_employee()}, Department : {self.department}")
 
-# manager = Manager("Hiren", 58000, "IT")
-# manager.display_manager()
+manager = Manager("Hiren", 58000, "IT")
+manager.display_manager()
 
 
 
@@ -387,26 +387,26 @@
 
 #* Create one object and call all three methods.
 
-# class Vehicle:
+class Vehicle:
 
-#     def start(self):
-#         print("Vehicle Started")
+    def start(self):
+        print("Vehicle Started")
 
-# class Car(Vehicle):
+class Car(Vehicle):
 
-#     def drive(self):
-#         print("Car is Driving")
+    def drive(self):
+        print("Car is Driving")
 
-# class ElectricCar(Car):
+class ElectricCar(Car):
 
-#     def charge(self):
-#         print("Charging Battery")
+    def charge(self):
+        print("Charging Battery")
 
-# electric = ElectricCar()
+electric = ElectricCar()
 
-# electric.start()
-# electric.drive()
-# electric.charge()
+electric.start()
+electric.drive()
+electric.charge()
 
 
 
@@ -435,35 +435,35 @@
 
 #* Create one object and display:
 
-# class School:
+class School:
 
-#     def __init__(self, school_name):
-#         self.school_name = school_name
+    def __init__(self, school_name):
+        self.school_name = school_name
 
-#     def display_school(self):
-#         return(f"School Name : {self.school_name}")
+    def display_school(self):
+        return(f"School Name : {self.school_name}")
 
-# class College(School):
+class College(School):
 
-#     def __init__(self, school_name, college_name):
-#         School.__init__(self, school_name)
-#         self.college_name = college_name
+    def __init__(self, school_name, college_name):
+        School.__init__(self, school_name)
+        self.college_name = college_name
 
-#     def display_college(self):
-#         return(f"College Name : {self.college_name}")
+    def display_college(self):
+        return(f"College Name : {self.college_name}")
 
-# class University(College):
+class University(College):
 
-#     def __init__(self, school_name, college_name, university_name):
-#         College.__init__(self, school_name, college_name)
-#         self.university_name = university_name
+    def __init__(self, school_name, college_name, university_name):
+        College.__init__(self, school_name, college_name)
+        self.university_name = university_name
 
-#     def display_university(self):
-#         print(f"{self.display_school()}, {self.display_college()}, University Name : {self.university_name}")
+    def display_university(self):
+        print(f"{self.display_school()}, {self.display_college()}, University Name : {self.university_name}")
 
-# university = University("C.P.E.S", "R.G.C.O.C.A", "Monark University")
+university = University("C.P.E.S", "R.G.C.O.C.A", "Monark University")
 
-# university.display_university()
+university.display_university()
 
 
 
@@ -492,32 +492,32 @@
 
 #* Create one object and display:
 
-# class Device:
+class Device:
 
-#     def __init__(self, company):
-#         self.company = company
+    def __init__(self, company):
+        self.company = company
 
-#     def display_device(self):
-#         return(f"Company Name : {self.company}")
+    def display_device(self):
+        return(f"Company Name : {self.company}")
 
-# class Mobile(Device):
+class Mobile(Device):
 
-#     def __init__(self, company, model):
-#         Device.__init__(self, company)
-#         self.model = model
+    def __init__(self, company, model):
+        Device.__init__(self, company)
+        self.model = model
 
-#     def display_mobile(self):
-#         return(f"Model : {self.model}")
+    def display_mobile(self):
+        return(f"Model : {self.model}")
 
-# class SmartPhone(Mobile):
+class SmartPhone(Mobile):
 
-#     def __init__(self, company, model, ram):
-#         Mobile.__init__(self, company, model)
-#         self.ram = ram
+    def __init__(self, company, model, ram):
+        Mobile.__init__(self, company, model)
+        self.ram = ram
 
-#     def display_smartphone(self):
-#         print(f"{self.display_device()}, {self.display_mobile()}, RAM : {self.ram}")
+    def display_smartphone(self):
+        print(f"{self.display_device()}, {self.display_mobile()}, RAM : {self.ram}")
 
-# smartphone = SmartPhone("Apple", "iPhone 15", "6GB")
+smartphone = SmartPhone("Apple", "iPhone 15", "6GB")
 
-# smartphone.display_smartphone()
+smartphone.display_smartphone()
