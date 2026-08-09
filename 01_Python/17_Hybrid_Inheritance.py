@@ -281,32 +281,32 @@
 
 #* Create one object of TeachingAssistant and call all methods.
 
-# class Person:
+class Person:
 
-#     def introduction(self):
-#         print("I am a Person")
+    def introduction(self):
+        print("I am a Person")
 
-# class Student(Person):
+class Student(Person):
 
-#     def study(self):
-#         print("Student is Studying")
+    def study(self):
+        print("Student is Studying")
 
-# class Teacher(Person):
+class Teacher(Person):
 
-#     def teach(self):
-#         print("Teacher is Teaching")
+    def teach(self):
+        print("Teacher is Teaching")
 
-# class TeachingAssistant(Student, Teacher):
+class TeachingAssistant(Student, Teacher):
 
-#     def assist(self):
-#         print("Teaching Assistant is Assisting")
+    def assist(self):
+        print("Teaching Assistant is Assisting")
 
-# rahul = TeachingAssistant()
+rahul = TeachingAssistant()
 
-# rahul.introduction()
-# rahul.study()
-# rahul.teach()
-# rahul.assist()
+rahul.introduction()
+rahul.study()
+rahul.teach()
+rahul.assist()
 
 
 
@@ -339,51 +339,46 @@
 
 # * Create one object of Smartphone and display all details.
 
-# class Device:
+class Device:
 
-#     def __init__(self, company):
-#         self.company = company
+    def __init__(self, company):
+        self.company = company
 
-#     def display_device(self):
-#         return(f"Company Name : {self.company}")
+    def display_device(self):
+        return(f"Company Name : {self.company}")
 
+class Mobile(Device):
 
-# class Mobile(Device):
+    def __init__(self, company, ram):
+        Device.__init__(self, company)
+        self.ram = ram
 
-#     def __init__(self, company, ram):
-#         Device.__init__(self, company)
-#         self.ram = ram
+    def display_mobile(self):
+        return(f"RAM : {self.ram}")
 
-#     def display_mobile(self):
-#         return(f"RAM : {self.ram}")
+class Camera(Device):
 
+    def __init__(self, company, megapixel):
+        Device.__init__(self, company)
+        self.megapixel = megapixel
 
-# class Camera(Device):
+    def display_camera(self):
+        return(f"Megapixel : {self.megapixel}")
 
-#     def __init__(self, company, megapixel):
-#         Device.__init__(self, company)
-#         self.megapixel = megapixel
+class Smartphone(Mobile, Camera):
 
-#     def display_camera(self):
-#         return(f"Megapixel : {self.megapixel}")
+    def __init__(self, company, ram, megapixel, storage):
+        Device.__init__(self, company)
+        self.ram = ram
+        self.megapixel = megapixel
+        self.storage = storage
 
+    def display_smartphone(self):
+        print(f"{self.display_device()}, {self.display_mobile()}, {self.display_camera()}, Storage : {self.storage}")
 
-# class Smartphone(Mobile, Camera):
+phone = Smartphone("Apple", "4GB", "12MP", "128GB")
 
-#     def __init__(self, company, ram, megapixel, storage):
-#         Device.__init__(self, company)
-#         self.ram = ram
-#         self.megapixel = megapixel
-#         self.storage = storage
-
-#     def display_smartphone(self):
-#         print(f"{self.display_device()}, {self.display_mobile()}, {self.display_camera()}, Storage : {self.storage}")
-
-    
-
-# phone = Smartphone("Apple", "4GB", "12MP", "128GB")
-
-# phone.display_smartphone()
+phone.display_smartphone()
 
 
 
@@ -417,44 +412,44 @@
 
 # * Create one object of TeamLead and display all details.
 
-# class Employee:
+class Employee:
 
-#     def __init__(self, name):
-#         self.name = name 
+    def __init__(self, name):
+        self.name = name 
 
-#     def display_employee(self):
-#         return(f"Name : {self.name}")
+    def display_employee(self):
+        return(f"Name : {self.name}")
 
-# class Manager(Employee):
+class Manager(Employee):
 
-#     def __init__(self, name, department):
-#         Employee.__init__(self, name)
-#         self.department = department
+    def __init__(self, name, department):
+        Employee.__init__(self, name)
+        self.department = department
 
-#     def display_manager(self):
-#         return(f"Department : {self.department}")
+    def display_manager(self):
+        return(f"Department : {self.department}")
 
-# class Developer(Employee):
+class Developer(Employee):
 
-#     def __init__(self, name, programming_language):
-#         Employee.__init__(self, name)
-#         self.programming_language = programming_language
+    def __init__(self, name, programming_language):
+        Employee.__init__(self, name)
+        self.programming_language = programming_language
 
-#     def display_developer(self):
-#         return(f"Programming Language : {self.programming_language}")
+    def display_developer(self):
+        return(f"Programming Language : {self.programming_language}")
 
-# class TeamLead(Manager, Developer):
+class TeamLead(Manager, Developer):
 
-#     def __init__(self, name, department, programming_language, project):
-#         Manager.__init__(self, name, department)
-#         Developer.__init__(self, name,programming_language)
-#         self.project = project
+    def __init__(self, name, department, programming_language, project):
+        Manager.__init__(self, name, department)
+        Developer.__init__(self, name,programming_language)
+        self.project = project
 
-#     def display_teamlead(self):
-#         print(f"{self.display_employee()}, {self.display_manager()}, {self.display_developer()}, Project : {self.project}")
+    def display_teamlead(self):
+        print(f"{self.display_employee()}, {self.display_manager()}, {self.display_developer()}, Project : {self.project}")
 
-# team_lead = TeamLead("Rahul", "IT", "Python", "Employee Management System")
-# team_lead.display_teamlead()
+team_lead = TeamLead("Rahul", "IT", "Python", "Employee Management System")
+team_lead.display_teamlead()
 
 
 
@@ -479,31 +474,31 @@
 
 # * Create one object of Duck and call all methods.
 
-# class Animal:
+class Animal:
 
-#     def eat(self):
-#         print("Animal is Eating")
+    def eat(self):
+        print("Animal is Eating")
 
-# class Bird(Animal):
+class Bird(Animal):
 
-#     def fly(self):
-#         print("Bird is Flying")
+    def fly(self):
+        print("Bird is Flying")
 
-# class Fish(Animal): 
+class Fish(Animal): 
 
-#     def swim(self):
-#         print("Fish is Swimming")
+    def swim(self):
+        print("Fish is Swimming")
 
-# class Duck(Bird, Fish):
+class Duck(Bird, Fish):
 
-#     def sound(self):
-#         print("Duck says Quack")
+    def sound(self):
+        print("Duck says Quack")
 
-# duck = Duck()
-# duck.eat()
-# duck.fly()
-# duck.swim()
-# duck.sound()
+duck = Duck()
+duck.eat()
+duck.fly()
+duck.swim()
+duck.sound()
 
 
 # #& 🔴 Question 5 – Vehicle → Car, Bike → ElectricVehicle
