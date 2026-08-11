@@ -113,20 +113,20 @@
 
 #* Create a Dog object and call sound().
 
-# class Animal:
+class Animal:
 
-#     def sound(self):
-#         return("Animal makes a sound")
+    def sound(self):
+        return("Animal makes a sound")
 
-# class Dog(Animal):
+class Dog(Animal):
 
-#     def sound(self):
-#         print(f"{super().sound()}, Dog Barks.")
+    def sound(self):
+        print(f"{super().sound()}, Dog Barks.")
 
 
-# dog = Dog()
+dog = Dog()
 
-# dog.sound()
+dog.sound()
 
 
 
