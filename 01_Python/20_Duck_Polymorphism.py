@@ -129,24 +129,24 @@
 #* Create Dog and Cat objects.
 #* Pass both objects to make_sound().
 
-# class Dog:
+class Dog:
 
-#     def speak(self):
-#         print("Dog Barks")
+    def speak(self):
+        print("Dog Barks")
 
-# class Cat:
+class Cat:
 
-#     def speak(self):
-#         print("Cat Meows")
+    def speak(self):
+        print("Cat Meows")
 
-# def make_sound(animal):
-#     animal.speak()
+def make_sound(animal):
+    animal.speak()
 
-# dog = Dog()
-# cat = Cat()
+dog = Dog()
+cat = Cat()
 
-# make_sound(dog)
-# make_sound(cat)
+make_sound(dog)
+make_sound(cat)
 
 
 
