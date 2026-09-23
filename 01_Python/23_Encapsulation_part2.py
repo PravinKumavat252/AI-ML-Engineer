@@ -492,17 +492,17 @@
 
 #^    Expected Output → `75`
 
-# class Student:
+class Student:
 
-#     def __init__(self, marks):
-#         self.__marks = marks
+    def __init__(self, marks):
+        self.__marks = marks
 
-#     def get_marks(self):
-#         return self.__marks
+    def get_marks(self):
+        return self.__marks
 
-# student = Student(85)
+student = Student(85)
 
-# print(f"Student marks : {student.get_marks()}")
+print(f"Student marks : {student.get_marks()}")
 
 
 
@@ -526,17 +526,17 @@
 
 #^    Expected Output → `38000`
 
-# class Employee:
+class Employee:
 
-#     def __init__(self, salary):
-#         self.__salary = salary
+    def __init__(self, salary):
+        self.__salary = salary
 
-#     def get_salary(self):
-#         return(self.__salary)
+    def get_salary(self):
+        return(self.__salary)
 
-# employee = Employee(38000)
+employee = Employee(38000)
 
-# print(f"Employee salary : {employee.get_salary()}")
+print(f"Employee salary : {employee.get_salary()}")
 
 
 
@@ -566,24 +566,24 @@
 
 #* Print the updated marks using `get_marks()`.
 
-# class Student:
+class Student:
 
-#     def __init__(self, marks):
-#         self.__marks = marks
+    def __init__(self, marks):
+        self.__marks = marks
 
-#     def get_marks(self):
-#         return self.__marks
+    def get_marks(self):
+        return self.__marks
 
-#     def set_marks(self, marks):
-#         self.__marks = marks
+    def set_marks(self, marks):
+        self.__marks = marks
 
-# student = Student(70)
-# print(f"Student marks : {student.get_marks()}")
+student = Student(70)
+print(f"Student marks : {student.get_marks()}")
 
-# print()
+print()
 
-# student.set_marks(85)
-# print(f"Student marks : {student.get_marks()}")
+student.set_marks(85)
+print(f"Student marks : {student.get_marks()}")
 
 
 
@@ -613,24 +613,24 @@
 
 #* Print the updated balance using `get_balance()`.
 
-# class BankAccount:
+class BankAccount:
 
-#     def __init__(self, balance):
-#         self.__balance = balance
+    def __init__(self, balance):
+        self.__balance = balance
 
-#     def get_balance(self):
-#         return(f"Bank Balance : {self.__balance}")
+    def get_balance(self):
+        return(f"Bank Balance : {self.__balance}")
 
-#     def set_balance(self, balance):
-#         self.__balance = balance
+    def set_balance(self, balance):
+        self.__balance = balance
 
-# bank = BankAccount(10000)
-# print(bank.get_balance())
+bank = BankAccount(10000)
+print(bank.get_balance())
 
-# print()
+print()
 
-# bank.set_balance(15000)
-# print(bank.get_balance())
+bank.set_balance(15000)
+print(bank.get_balance())
 
 
 
@@ -668,24 +668,24 @@
 
 #^    `set_price()` → Setter
 
-# class Product:
+class Product:
 
-#     def __init__(self, price):
-#         self.__price = price
+    def __init__(self, price):
+        self.__price = price
 
-#     def get_price(self):
-#         return(f"Product Price : {self.__price}")
+    def get_price(self):
+        return(f"Product Price : {self.__price}")
 
-#     def set_price(self, price):
-#         self.__price = price
+    def set_price(self, price):
+        self.__price = price
 
-# product = Product(500000)
-# print(product.get_price())
+product = Product(500000)
+print(product.get_price())
 
-# print()
+print()
 
-# product.set_price(55000)
-# print(product.get_price())
+product.set_price(55000)
+print(product.get_price())
 
 
 
@@ -715,24 +715,24 @@
 
 #* Print the updated name using `get_name()`.
 
-# class Student:
+class Student:
 
-#     def __init__(self, name):
-#         self.__name = name
+    def __init__(self, name):
+        self.__name = name
 
-#     def get_name(self):
-#         return(f"Student name : {self.__name}")
+    def get_name(self):
+        return(f"Student name : {self.__name}")
 
-#     def set_name(self, name):
-#         self.__name = name
+    def set_name(self, name):
+        self.__name = name
 
-# student = Student("Pravin")
-# print(student.get_name())
+student = Student("Pravin")
+print(student.get_name())
 
-# print()
+print()
 
-# student.set_name("Rahul")
-# print(student.get_name())
+student.set_name("Rahul")
+print(student.get_name())
 
 
 
@@ -776,35 +776,35 @@
 
 #^    Setter Methods
 
-# class Employee:
+class Employee:
 
-#     def __init__(self, name, salary):
-#         self.__name = name
-#         self.__salary = salary
+    def __init__(self, name, salary):
+        self.__name = name
+        self.__salary = salary
 
-#     def get_name(self):
-#         return(f"Employee name : {self.__name}")
+    def get_name(self):
+        return(f"Employee name : {self.__name}")
 
-#     def set_name(self, name):
-#         self.__name = name
+    def set_name(self, name):
+        self.__name = name
         
-#     def get_salary(self):
-#         return(f"Employee salary : {self.__salary}")
+    def get_salary(self):
+        return(f"Employee salary : {self.__salary}")
 
-#     def set_salary(self, salary):
-#         self.__salary = salary
+    def set_salary(self, salary):
+        self.__salary = salary
 
-# employee = Employee("Pravin", 38000)
-# print(employee.get_name())
-# print(employee.get_salary())
+employee = Employee("Pravin", 38000)
+print(employee.get_name())
+print(employee.get_salary())
 
-# print()
+print()
 
-# employee.set_name("Rahul")
-# employee.set_salary(45000)
+employee.set_name("Rahul")
+employee.set_salary(45000)
 
-# print(employee.get_name())
-# print(employee.get_salary())
+print(employee.get_name())
+print(employee.get_salary())
 
 
 
@@ -844,33 +844,33 @@
 
 #^    `-10` → Invalid
 
-# class Student:
+class Student:
 
-#     def __init__(self, marks):
-#         self.__marks = marks
+    def __init__(self, marks):
+        self.__marks = marks
 
-#     def get_marks(self):
-#         print(f"Student's marks : {self.__marks}")
+    def get_marks(self):
+        print(f"Student's marks : {self.__marks}")
 
-#     def set_marks(self, marks):
+    def set_marks(self, marks):
 
-#         if 0 <= marks <= 100:
-#             self.__marks = marks
-#         else:
-#             print("Invalid Marks")
+        if 0 <= marks <= 100:
+            self.__marks = marks
+        else:
+            print("Invalid Marks")
 
-# student = Student(75)
-# student.get_marks()
+student = Student(75)
+student.get_marks()
 
-# print()
+print()
 
-# student.set_marks(85)
-# student.get_marks()
+student.set_marks(85)
+student.get_marks()
 
-# print()
+print()
 
-# student.set_marks(-10)
-# student.set_marks(120)
+student.set_marks(-10)
+student.set_marks(120)
 
 
 
@@ -908,32 +908,32 @@
 
 #^    `-5000` → Invalid
 
-# class BankAccount:
+class BankAccount:
 
-#     def __init__(self, balance):
-#         self.__balance = balance
+    def __init__(self, balance):
+        self.__balance = balance
 
-#     def get_balance(self):
-#         print(f"Bank Balance : {self.__balance}")
+    def get_balance(self):
+        print(f"Bank Balance : {self.__balance}")
 
-#     def set_balance(self, balance):
+    def set_balance(self, balance):
 
-#         if balance > 0:
-#             self.__balance = balance
-#         else:
-#             print("Invalid Balance")
+        if balance > 0:
+            self.__balance = balance
+        else:
+            print("Invalid Balance")
 
-# bank = BankAccount(10000)
-# bank.get_balance()
+bank = BankAccount(10000)
+bank.get_balance()
 
-# print()
+print()
 
-# bank.set_balance(15000)
-# bank.get_balance()
+bank.set_balance(15000)
+bank.get_balance()
 
-# print()
+print()
 
-# bank.set_balance(-5000)
+bank.set_balance(-5000)
 
 
 
@@ -1005,37 +1005,37 @@
 
 #^    `set_salary()` → Setter
 
-# class Employee:
+class Employee:
 
-#     def __init__(self, name, salary):
-#         self.__name = name
-#         self.__salary = salary
+    def __init__(self, name, salary):
+        self.__name = name
+        self.__salary = salary
 
-#     def get_name(self):
-#         print(f"Employee name : {self.__name}")
+    def get_name(self):
+        print(f"Employee name : {self.__name}")
 
-#     def set_name(self, name):
-#         self.__name = name
+    def set_name(self, name):
+        self.__name = name
 
-#     def get_salary(self):
-#             print(f"Employee salary : {self.__salary}")
+    def get_salary(self):
+            print(f"Employee salary : {self.__salary}")
     
-#     def set_salary(self, salary):
+    def set_salary(self, salary):
 
-#         if salary > 0:
-#             self.__salary = salary
-#         else:
-#              print("Invalid Salary")
+        if salary > 0:
+            self.__salary = salary
+        else:
+             print("Invalid Salary")
 
-# employee = Employee("Pravin", 38000)
-# employee.get_name()
-# employee.get_salary()
+employee = Employee("Pravin", 38000)
+employee.get_name()
+employee.get_salary()
 
-# print()
+print()
 
-# employee.set_name("Rahul")
-# employee.set_salary(45000)
+employee.set_name("Rahul")
+employee.set_salary(45000)
 
-# print()
+print()
 
-# employee.set_salary(-5000)
+employee.set_salary(-5000)
