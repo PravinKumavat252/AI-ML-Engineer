@@ -205,8 +205,8 @@
 
 #^ [2, 4, 6, 8, 10]
 
-# lst = [1, 2, 3, 4, 5]
-# print([i*2 for i in lst])
+lst = [1, 2, 3, 4, 5]
+print([i*2 for i in lst])
 
 
 
@@ -226,8 +226,8 @@
 
 #^ [1, 4, 9, 16, 25]
 
-# lst = [1, 2, 3, 4, 5]
-# print([i*i for i in lst])
+lst = [1, 2, 3, 4, 5]
+print([i*i for i in lst])
 
 
 
@@ -247,8 +247,8 @@
 
 #^ ['PRAVIN', 'RAHUL', 'AMIT', 'VIJAY']
 
-# lst = ["Pravin", "Rahul", "Amit", "Vijay"]
-# print([i.upper() for i in lst])
+lst = ["Pravin", "Rahul", "Amit", "Vijay"]
+print([i.upper() for i in lst])
 
 
 
@@ -268,8 +268,8 @@
 
 #^ [15, 20, 25, 30, 35]
 
-# lst = [5, 10, 15, 20, 25]
-# print([i+10 for i in lst])
+lst = [5, 10, 15, 20, 25]
+print([i+10 for i in lst])
 
 
 
@@ -289,8 +289,8 @@
 
 #^ [6, 5, 4, 5]
 
-# lst = ["Pravin", "Rahul", "Amit", "Vijay"]
-# print([len(i) for i in lst])
+lst = ["Pravin", "Rahul", "Amit", "Vijay"]
+print([len(i) for i in lst])
 
 
 
@@ -310,8 +310,8 @@
 
 #^ [2, 4, 6, 8, 10]
 
-# lst = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10]
-# print([i for i in lst if i % 2 == 0])
+lst = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10]
+print([i for i in lst if i % 2 == 0])
 
 
 
@@ -331,8 +331,8 @@
 
 #^ [60, 75, 90]
 
-# lst = [20, 45, 60, 75, 30, 90, 40]
-# print([i for i in lst if i > 50])
+lst = [20, 45, 60, 75, 30, 90, 40]
+print([i for i in lst if i > 50])
 
 
 #& 🔴 Question 8 – Even Numbers and Square
@@ -353,8 +353,8 @@
 
 #^ [4, 16, 36]
 
-# lst = [1, 2, 3, 4, 5, 6]
-# print([i**2 for i in lst if i % 2 == 0])
+lst = [1, 2, 3, 4, 5, 6]
+print([i**2 for i in lst if i % 2 == 0])
 
 
 #& 🔴 Question 9 – Unique  
@@ -375,8 +375,8 @@
 
 #^ {1, 4, 9, 16, 25}
 
-# lst = [1, 2, 2, 3, 3, 4, 5]
-# print({i*i for i in lst})
+lst = [1, 2, 2, 3, 3, 4, 5]
+print({i*i for i in lst})
 
 
 
@@ -396,8 +396,8 @@
 
 #^ {2, 4, 6, 8, 10}
 
-# lst = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10]
-# print({i for i in lst if i % 2 == 0})
+lst = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10]
+print({i for i in lst if i % 2 == 0})
 
 
 
@@ -419,8 +419,8 @@
 
 #^ {1: 1, 2: 4, 3: 9, 4: 16, 5: 25}
 
-# lst = [1, 2, 3, 4, 5]
-# print({i : i*i for i in lst})
+lst = [1, 2, 3, 4, 5]
+print({i : i*i for i in lst})
 
 
 
@@ -440,8 +440,8 @@
 
 #^ {'Pravin': 75, 'Rahul': 85, 'Vijay': 90}
 
-# dic = {"Pravin": 75, "Rahul": 85, "Amit": 65, "Vijay": 90}
-# print({i : dic[i] for i in dic if dic[i] >= 70})
+dic = {"Pravin": 75, "Rahul": 85, "Amit": 65, "Vijay": 90}
+print({i : dic[i] for i in dic if dic[i] >= 70})
 
 
 
@@ -461,8 +461,8 @@
 
 #^ {'Pravin': 35000, 'Rahul': 40000, 'Amit': 45000}
 
-# dic = {"Pravin": 30000, "Rahul": 35000, "Amit": 40000}
-# print({i : dic[i] + 5000 for i in dic})
+dic = {"Pravin": 30000, "Rahul": 35000, "Amit": 40000}
+print({i : dic[i] + 5000 for i in dic})
 
 
 
@@ -486,8 +486,8 @@
 
 #^ {2: 4, 4: 16, 6: 36, 8: 64, 10: 100}
 
-# s = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10]
-# print({i : i*i for i in s if i % 2 == 0})
+s = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10]
+print({i : i*i for i in s if i % 2 == 0})
 
 
 
