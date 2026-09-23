@@ -161,19 +161,19 @@
 
 #* Print the total marks.
 
-# class Student:
+class Student:
 
-#     def __init__(self, name, marks):
-#         self.name = name
-#         self.marks = marks
+    def __init__(self, name, marks):
+        self.name = name
+        self.marks = marks
 
-#     def __add__(self, other):
-#         return self.marks + other.marks
+    def __add__(self, other):
+        return self.marks + other.marks
 
-# s1 = Student('Pravin', 78)
-# s2 = Student('Hiren', 80)
+s1 = Student('Pravin', 78)
+s2 = Student('Hiren', 80)
 
-# print(f"Total marks: {s1.__add__(s2)}")
+print(f"Total marks: {s1.__add__(s2)}")
 
 
 
@@ -198,20 +198,20 @@
 
 #* Print the price difference.
 
-# class Product:
+class Product:
 
-#     def __init__(self, name, price):
-#         self.name = name
-#         self.price = price
+    def __init__(self, name, price):
+        self.name = name
+        self.price = price
 
-#     def __sub__(self, other):
-#         return self.price - other.price
+    def __sub__(self, other):
+        return self.price - other.price
 
-# p1 = Product('Laptop', 65000)
-# p2 = Product('Mobile', 25000)
+p1 = Product('Laptop', 65000)
+p2 = Product('Mobile', 25000)
 
-# difference = p1 - p2
-# print(F"Difference of Price between {p1.name} and {p2.name} is : {difference}")
+difference = p1 - p2
+print(F"Difference of Price between {p1.name} and {p2.name} is : {difference}")
 
 
 
@@ -235,22 +235,22 @@
 
 #* Print the result.
 
-# class Rectangle:
+class Rectangle:
 
-#     def __init__(self, length, width):
-#         self.length = length
-#         self.width = width
+    def __init__(self, length, width):
+        self.length = length
+        self.width = width
 
-#     def __mul__(self, other):
-#         return(self.length * other.length * self.width * other.width)
+    def __mul__(self, other):
+        return(self.length * other.length * self.width * other.width)
     
 
-# r1 = Rectangle(10, 5)
-# r2 = Rectangle(4, 3)
+r1 = Rectangle(10, 5)
+r2 = Rectangle(4, 3)
 
-# area = r1 * r2
+area = r1 * r2
 
-# print(f"Area of Rectangle : {area}")
+print(f"Area of Rectangle : {area}")
 
 
 
@@ -272,17 +272,17 @@
 #* Print the object directly using:
 #* print(employee)
 
-# class Employee:
+class Employee:
 
-#     def __init__(self, name, salary):
-#         self.name = name
-#         self.salary = salary
+    def __init__(self, name, salary):
+        self.name = name
+        self.salary = salary
 
-#     def __str__(self):
-#         return(f"Employee : {self.name}, Salary : {self.salary}")
+    def __str__(self):
+        return(f"Employee : {self.name}, Salary : {self.salary}")
 
-# employee = Employee('Rohit', 50000)
-# print(employee)
+employee = Employee('Rohit', 50000)
+print(employee)
 
 
 
@@ -302,22 +302,22 @@
 #* Print the result using:
 #* len(library)
 
-# class Library:
+class Library:
 
-#     def __init__(self, total_books):
-#         self.total_books = total_books
+    def __init__(self, total_books):
+        self.total_books = total_books
 
-#     def __len__(self):
-#         return self.total_books
+    def __len__(self):
+        return self.total_books
 
-#     def __str__(self):
-#         return f"The total number of books : {self.total_books}"
+    def __str__(self):
+        return f"The total number of books : {self.total_books}"
 
 
-# library = Library(250)
+library = Library(250)
 
-# print(library)
-# print(len(library))
+print(library)
+print(len(library))
 
 
 
@@ -343,21 +343,21 @@
 
 #* Print the result.
 
-# class Student:
+class Student:
 
-#     def __init__(self, name, marks):
-#         self.name = name
-#         self.marks = marks
+    def __init__(self, name, marks):
+        self.name = name
+        self.marks = marks
 
-#     def __add__(self, other):
-#         return self.marks + other.marks
+    def __add__(self, other):
+        return self.marks + other.marks
 
-# s1 = Student("Rahul", 85)
-# s2 = Student("Amit", 90)
+s1 = Student("Rahul", 85)
+s2 = Student("Amit", 90)
 
-# result = s1 + s2
+result = s1 + s2
 
-# print(f"{s1.name} and  {s2.name} has total marks : {result}")
+print(f"{s1.name} and  {s2.name} has total marks : {result}")
 
 
 
@@ -380,19 +380,19 @@
 
 #* Add them using:
 
-# class BankAccount:
+class BankAccount:
 
-#     def __init__(self, account_holder, balance):
-#         self.account_holder = account_holder
-#         self.balance = balance
+    def __init__(self, account_holder, balance):
+        self.account_holder = account_holder
+        self.balance = balance
 
-#     def __add__(self, other):
-#         return self.balance + other.balance
+    def __add__(self, other):
+        return self.balance + other.balance
 
-# b1 = BankAccount("Pravin", 50000)
-# b2 = BankAccount("Hiren", 30000)
+b1 = BankAccount("Pravin", 50000)
+b2 = BankAccount("Hiren", 30000)
 
-# print(f"{b1.account_holder} and  {b2.account_holder} has total balance : {b1 + b2}")
+print(f"{b1.account_holder} and  {b2.account_holder} has total balance : {b1 + b2}")
 
 
 
@@ -421,19 +421,19 @@
 
 # (Use the object to calculate total value.)
 
-# class Product:
+class Product:
 
-#     def __init__(self, name, price, quantity):
-#         self.name = name
-#         self.price = price
-#         self.quantity = quantity
+    def __init__(self, name, price, quantity):
+        self.name = name
+        self.price = price
+        self.quantity = quantity
 
-#     def __mul__(self):
-#         return self.price * self.quantity
+    def __mul__(self):
+        return self.price * self.quantity
 
-# product = Product("Laptop", 65000, 2)
+product = Product("Laptop", 65000, 2)
 
-# print(f"the total cost of the product : {product.price * product.quantity}")
+print(f"the total cost of the product : {product.price * product.quantity}")
 
 
 
@@ -455,22 +455,22 @@
 
 #^    True or False
 
-# class Employee:
+class Employee:
 
-#     def __init__(self, name, salary):
-#         self.name = name
-#         self.salary = salary
+    def __init__(self, name, salary):
+        self.name = name
+        self.salary = salary
 
-#     def __eq__(self, other):
-#         return self.salary == other.salary
+    def __eq__(self, other):
+        return self.salary == other.salary
 
-# e1 = Employee("Rahul", 50000)
-# e2 = Employee("Amit", 5000)
+e1 = Employee("Rahul", 50000)
+e2 = Employee("Amit", 5000)
 
-# if e1 == e2:
-#     print(f"{e1.name} and {e2.name} do have same salary")
-# else:
-#     print(f"{e1.name} and {e2.name}do  not have same salary")
+if e1 == e2:
+    print(f"{e1.name} and {e2.name} do have same salary")
+else:
+    print(f"{e1.name} and {e2.name}do  not have same salary")
     
 
 
@@ -495,19 +495,19 @@
 
 #* Print the object directly.
 
-# class Book:
+class Book:
 
-#     def __init__(self, title, author, price):
-#         self.title = title
-#         self.author = author
-#         self.price = price
+    def __init__(self, title, author, price):
+        self.title = title
+        self.author = author
+        self.price = price
 
-#     def __str__(self):
-#         return(f"Book : {self.title}, Author : {self.author}, Price : {self.price}")
+    def __str__(self):
+        return(f"Book : {self.title}, Author : {self.author}, Price : {self.price}")
 
-# book = Book("Python Basics", "Guido", 599)
+book = Book("Python Basics", "Guido", 599)
 
-# print(book)
+print(book)
 
 
 
@@ -528,7 +528,7 @@
 
 #* Return:
 
-True
+# True
 
 # if first student has fewer marks.
 
@@ -536,22 +536,22 @@ True
 
 #* Compare:
 
-# class Student:
+class Student:
 
-#     def __init__(self, name, marks):
-#         self.name = name
-#         self.marks = marks
+    def __init__(self, name, marks):
+        self.name = name
+        self.marks = marks
 
-#     def __lt__(self, other):
-#         return self.marks < other.marks
+    def __lt__(self, other):
+        return self.marks < other.marks
 
-# s1 = Student("Rahul", 95)
-# s2 = Student("Amit", 90)
+s1 = Student("Rahul", 95)
+s2 = Student("Amit", 90)
 
-# if s1 < s2:
-#     print(f"{s1.name} has fewer marks than {s2.name}")
-# else:
-#     print(f"{s1.name} has more marks than {s2.name}")
+if s1 < s2:
+    print(f"{s1.name} has fewer marks than {s2.name}")
+else:
+    print(f"{s1.name} has more marks than {s2.name}")
 
 
 
@@ -573,28 +573,28 @@ True
 
 #* Return:
 
-True
+# True
 
 # if first product price is greater.
 
 #* Compare:
 
-# class Product:
+class Product:
 
-#     def __init__(self, name, price):
-#         self.name = name
-#         self.price = price
+    def __init__(self, name, price):
+        self.name = name
+        self.price = price
 
-#     def __gt__(self, other):
-#         return self.price > other.price
+    def __gt__(self, other):
+        return self.price > other.price
 
-# p1 = Product("Laptop", 65000)
-# p2 = Product("Mobile", 25000)
+p1 = Product("Laptop", 65000)
+p2 = Product("Mobile", 25000)
 
-# if p1 > p2:
-#     print(f"{p1.name} has greater price than {p2.name}")
-# else:
-#     print(f"{p2.name} has greater price than {p1.name}")
+if p1 > p2:
+    print(f"{p1.name} has greater price than {p2.name}")
+else:
+    print(f"{p2.name} has greater price than {p1.name}")
 
 
 
@@ -616,16 +616,16 @@ True
 
 #* Use:
 
-# class ShoppingCart:
+class ShoppingCart:
 
-#     def __init__(self, items):
-#         self.items = items
+    def __init__(self, items):
+        self.items = items
 
-#     def __len__(self):
-#         return len(self.items)
+    def __len__(self):
+        return len(self.items)
 
-# cart = ShoppingCart(["Laptop", "Mouse", "Keyboard", "Monitor"])
-# print(f"the total number of items in the cart : {len(cart)}")
+cart = ShoppingCart(["Laptop", "Mouse", "Keyboard", "Monitor"])
+print(f"the total number of items in the cart : {len(cart)}")
 
 
 
@@ -649,20 +649,20 @@ True
 
 #* Return the mark at that index.
 
-# class Student:
+class Student:
 
-#     def __init__(self, name, marks_list):
-#         self.name = name
-#         self.marks_list = marks_list
+    def __init__(self, name, marks_list):
+        self.name = name
+        self.marks_list = marks_list
 
-#     def __getitem__(self, key):
-#         return self.marks_list[key]
+    def __getitem__(self, key):
+        return self.marks_list[key]
 
-# student = Student("Pravin", [85, 90, 78])
+student = Student("Pravin", [85, 90, 78])
 
-# print(student[0])
-# print(student[1])
-# print(student[-1])
+print(student[0])
+print(student[1])
+print(student[-1])
 
 
 
@@ -680,11 +680,11 @@ True
 
 #* Call object directly:
 
-# class Calculator:
+class Calculator:
 
-#     def __call__(self, a, b):
-#         return a + b
+    def __call__(self, a, b):
+        return a + b
 
-# calculator = Calculator()
+calculator = Calculator()
 
-# print(calculator(10, 20))
+print(calculator(10, 20))
