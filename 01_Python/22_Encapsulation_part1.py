@@ -391,19 +391,19 @@
 
 #^    `__marks` → Private
 
-# class Student:
+class Student:
 
-#     def __init__(self, name, roll_no, marks):
-#         self.name = name
-#         self._roll_no = roll_no
-#         self.__marks = marks
+    def __init__(self, name, roll_no, marks):
+        self.name = name
+        self._roll_no = roll_no
+        self.__marks = marks
 
-#     def display(self):
-#         print(f"Name : {self.name}, Roll No : {self._roll_no}, Marks : {self.__marks}")
+    def display(self):
+        print(f"Name : {self.name}, Roll No : {self._roll_no}, Marks : {self.__marks}")
 
-# student = Student("Pravin", 181, 74.4)
+student = Student("Pravin", 181, 74.4)
 
-# student.display()
+student.display()
 
 
 
@@ -427,19 +427,19 @@
 
 #^    `__salary` → Private
 
-# class Employee:
+class Employee:
 
-#     def __init__(self, employee_id, department, salary):
-#         self.employee_id = employee_id
-#         self._department = department
-#         self.__salary = salary
+    def __init__(self, employee_id, department, salary):
+        self.employee_id = employee_id
+        self._department = department
+        self.__salary = salary
 
-#     def display(self):
-#         return(f"Employee ID : {self.employee_id}, Department : {self._department}, Salary : {self.__salary}")
+    def display(self):
+        return(f"Employee ID : {self.employee_id}, Department : {self._department}, Salary : {self.__salary}")
 
-# employee = Employee(181, "IT", 38000)
+employee = Employee(181, "IT", 38000)
 
-# print(employee.display())
+print(employee.display())
 
 
 
@@ -463,19 +463,19 @@
 
 #^    Private → __balance
 
-# class BankAccount:
+class BankAccount:
 
-#     def __init__(self, account_holder, account_type, balance):
-#         self.account_holder = account_holder
-#         self._account_type = account_type
-#         self.__balance = balance
+    def __init__(self, account_holder, account_type, balance):
+        self.account_holder = account_holder
+        self._account_type = account_type
+        self.__balance = balance
 
-#     def display(self):
-#         print(f"Account Holder Name : {self.account_holder}, Account Type : {self._account_type}, Balance : {self.__balance}")
+    def display(self):
+        print(f"Account Holder Name : {self.account_holder}, Account Type : {self._account_type}, Balance : {self.__balance}")
 
-# bankaccount = BankAccount("Pravin", "Saving", 38000)
+bankaccount = BankAccount("Pravin", "Saving", 38000)
 
-# bankaccount.display()
+bankaccount.display()
 
 
 
@@ -500,18 +500,18 @@
 
 #~ Write the output/error for each access.
 
-# class Student:
+class Student:
 
-#     def __init__(self):
-#         self.name = "Pravin"
-#         self._roll_no = 181
-#         self.__marks = 74.4
+    def __init__(self):
+        self.name = "Pravin"
+        self._roll_no = 181
+        self.__marks = 74.4
 
-# student = Student()
+student = Student()
 
-# print(student.name)
-# print(student._roll_no)
-# print(student.__marks)
+print(student.name)
+print(student._roll_no)
+print(student.__marks)
 
 
 
@@ -546,19 +546,19 @@
 
 #^    Why?
 
-# class Employee:
+class Employee:
 
-#     def __init__(self):
-#         self.name = "Pravin"
-#         self._department = "IT"
-#         self.__salary = 38000
+    def __init__(self):
+        self.name = "Pravin"
+        self._department = "IT"
+        self.__salary = 38000
         
 
-# employee = Employee()
+employee = Employee()
 
-# print(employee.name)
-# print(employee._department)
-# print(employee.__salary)
+print(employee.name)
+print(employee._department)
+print(employee.__salary)
 
 
 
@@ -567,19 +567,19 @@
 
 #~ Predict what will happen when this code runs:
 
-# class Student:
+class Student:
 
-# def __init__(self):
-#     self.name = "Pravin"
-#     self._roll_no = 101
-#     self.__marks = 85
+def __init__(self):
+    self.name = "Pravin"
+    self._roll_no = 101
+    self.__marks = 85
 
 
-# student = Student()
+student = Student()
 
-# print(student.name)
-# print(student._roll_no)
-# print(student.__marks)
+print(student.name)
+print(student._roll_no)
+print(student.__marks)
 
 #~ Write:
 
@@ -621,25 +621,25 @@
 
 #~ Observe the difference between **inside access and outside access**.
 
-# class Student:
+class Student:
 
-#     def __init__(self, name, course, fees):
-#         self.name = name
-#         self._course = course
-#         self.__fees = fees
+    def __init__(self, name, course, fees):
+        self.name = name
+        self._course = course
+        self.__fees = fees
 
-#     def display(self):
-#         print(f"Name : {self.name}")
-#         print(f"Course : {self._course}")
-#         print(f"Fees : {self.__fees}")
+    def display(self):
+        print(f"Name : {self.name}")
+        print(f"Course : {self._course}")
+        print(f"Fees : {self.__fees}")
 
-# student = Student("Pravin", "ICT", 60000)
+student = Student("Pravin", "ICT", 60000)
 
-# student.display()
+student.display()
 
-# print(student.name)
-# print(student._course)
-# print(student.__fees)
+print(student.name)
+print(student._course)
+print(student.__fees)
 
 
 
@@ -671,23 +671,23 @@
 
 #^    Private
 
-# class Employee:
+class Employee:
 
-#     def __init__(self, name, department, salary):
-#         self.name = name
-#         self._department = department
-#         self.__salary = salary
+    def __init__(self, name, department, salary):
+        self.name = name
+        self._department = department
+        self.__salary = salary
 
-#     def display_employee(self):
-#         print(f"Name : {self.name}, Department : {self._department}, Slary : {self.__salary}")
+    def display_employee(self):
+        print(f"Name : {self.name}, Department : {self._department}, Slary : {self.__salary}")
 
-# employee = Employee("Pravin", "IT", 38000)
+employee = Employee("Pravin", "IT", 38000)
 
-# employee.display_employee()
+employee.display_employee()
 
-# print(f"Name :{employee.name}")
-# print(f"Department : {employee._department}")
-# print(f"Salary : {employee.__salary}")
+print(f"Name :{employee.name}")
+print(f"Department : {employee._department}")
+print(f"Salary : {employee.__salary}")
 
 
 
@@ -721,24 +721,24 @@
 
 #~ Explain why the access behavior is different for each variable.
 
-# class BankAccount:
+class BankAccount:
 
-#     def __init__(self, account_holder, account_type, balance):
-#         self.account_holder = account_holder
-#         self._account_type = account_type
-#         self.__balance = balance
+    def __init__(self, account_holder, account_type, balance):
+        self.account_holder = account_holder
+        self._account_type = account_type
+        self.__balance = balance
 
-#     def display_account(self):
-#         print(f"Account Holder : {self.account_holder}, Account Type : {self._account_type}, Balance : {self.__balance}")
+    def display_account(self):
+        print(f"Account Holder : {self.account_holder}, Account Type : {self._account_type}, Balance : {self.__balance}")
 
 
-# bank_account = BankAccount("Pravin", "Savings", 10000)
-# bank_account.display_account()
+bank_account = BankAccount("Pravin", "Savings", 10000)
+bank_account.display_account()
 
-# print()
-# print(bank_account.account_holder)
-# print(bank_account._account_type)
-# print(bank_account.__balance)
+print()
+print(bank_account.account_holder)
+print(bank_account._account_type)
+print(bank_account.__balance)
 
 
 
