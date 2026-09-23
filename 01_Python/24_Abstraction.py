@@ -227,23 +227,23 @@
 #^    Expected Output → `Dog barks`
 
 
-# from abc import ABC, abstractmethod
+from abc import ABC, abstractmethod
 
-# class Animal(ABC):
+class Animal(ABC):
 
-#     @abstractmethod
-#     def sound(self):
-#         # print("Animal make noise")
-#         pass
+    @abstractmethod
+    def sound(self):
+        # print("Animal make noise")
+        pass
 
-# class Dog(Animal):
+class Dog(Animal):
 
-#     def sound(self):
-#         print("Dog barks")
+    def sound(self):
+        print("Dog barks")
 
-# dog = Dog()
+dog = Dog()
 
-# dog.sound()
+dog.sound()
 
 
 #& 🔴 Question 2 – Vehicle
@@ -266,22 +266,22 @@
 
 #^    Expected Output → `Car Started`
 
-# from abc import ABC, abstractmethod
+from abc import ABC, abstractmethod
 
-# class Vehicle(ABC):
+class Vehicle(ABC):
 
-#     @abstractmethod
-#     def start(self):
-#         pass
+    @abstractmethod
+    def start(self):
+        pass
 
-# class Car(Vehicle):
+class Car(Vehicle):
 
-#     def start(self):
-#         print("Car Started")
+    def start(self):
+        print("Car Started")
 
-# car = Car()
+car = Car()
 
-# car.start()
+car.start()
 
 
 
@@ -309,26 +309,26 @@
 
 #* Call the `area()` method.
 
-# from abc import ABC, abstractmethod
+from abc import ABC, abstractmethod
 
-# class Shape(ABC):
+class Shape(ABC):
 
-#     @abstractmethod
-#     def area(self):
-#         pass
+    @abstractmethod
+    def area(self):
+        pass
 
-# class Rectangle(Shape):
+class Rectangle(Shape):
 
-#     def __init__(self, length, width):
-#         self.length = length
-#         self.width = width
+    def __init__(self, length, width):
+        self.length = length
+        self.width = width
 
-#     def area(self):
-#         print(f"Area of rectangle : {self.length * self.width}")
+    def area(self):
+        print(f"Area of rectangle : {self.length * self.width}")
 
-# rectangle = Rectangle(45, 30)
+rectangle = Rectangle(45, 30)
 
-# rectangle.area()
+rectangle.area()
 
 
 
@@ -362,22 +362,22 @@
 
 #^    `Developer` → Concrete Class
 
-# from abc import ABC, abstractmethod
+from abc import ABC, abstractmethod
 
-# class Employee(ABC):
+class Employee(ABC):
 
-#     @abstractmethod
-#     def work(self):
-#         pass
+    @abstractmethod
+    def work(self):
+        pass
 
-# class Developer(Employee):
+class Developer(Employee):
 
-#     def work(self):
-#         print("Developer writes code")
+    def work(self):
+        print("Developer writes code")
 
-# developer = Developer()
+developer = Developer()
 
-# developer.work()
+developer.work()
 
 
 
@@ -406,31 +406,31 @@
 #* Call the `pay()` method.
 
 
-# from abc import ABC, abstractmethod
+from abc import ABC, abstractmethod
 
-# class Payment(ABC):
+class Payment(ABC):
 
-#     @abstractmethod
-#     def pay(self):
-#         pass
+    @abstractmethod
+    def pay(self):
+        pass
 
-# class CreditCard(Payment):
+class CreditCard(Payment):
 
-#     def pay(self):
-#         print("Payment using Credit Card")
+    def pay(self):
+        print("Payment using Credit Card")
 
-# class UPI(Payment):
+class UPI(Payment):
 
-#     def pay(self):
-#         print("Payment using UPI")
+    def pay(self):
+        print("Payment using UPI")
 
-# creditcard = CreditCard()
-# creditcard.pay()
+creditcard = CreditCard()
+creditcard.pay()
 
-# print()
+print()
 
-# upi = UPI()
-# upi.pay()
+upi = UPI()
+upi.pay()
 
 
 
@@ -465,30 +465,30 @@
 #^    Concrete Class
 
 
-# from abc import ABC, abstractmethod
+from abc import ABC, abstractmethod
 
-# class BankAccount(ABC):
+class BankAccount(ABC):
 
-#     @abstractmethod
-#     def deposit(self):
-#         pass
+    @abstractmethod
+    def deposit(self):
+        pass
 
-#     @abstractmethod
-#     def withdraw(self):
-#         pass
+    @abstractmethod
+    def withdraw(self):
+        pass
 
-# class SavingsAccount(BankAccount):
+class SavingsAccount(BankAccount):
 
-#     def deposit(self):
-#         print("Amount Deposited")
+    def deposit(self):
+        print("Amount Deposited")
 
-#     def withdraw(self):
-#         print("Amount Withdrawn")
+    def withdraw(self):
+        print("Amount Withdrawn")
 
-# saving = SavingsAccount()
+saving = SavingsAccount()
 
-# saving.deposit()
-# saving.withdraw()
+saving.deposit()
+saving.withdraw()
 
 
 
@@ -522,34 +522,34 @@
 
 #* Print the employee name along with their work.
 
-# from abc import ABC, abstractmethod
+from abc import ABC, abstractmethod
 
-# class Employee(ABC):
+class Employee(ABC):
 
-#     def __init__(self, name):
-#         self.name = name
+    def __init__(self, name):
+        self.name = name
 
-#     @abstractmethod
-#     def work(self):
-#         pass
+    @abstractmethod
+    def work(self):
+        pass
 
-# class Developer(Employee):
+class Developer(Employee):
 
-#     def work(self):
-#         print(f"{self.name} is a Developer and writes code")
+    def work(self):
+        print(f"{self.name} is a Developer and writes code")
 
-# class Manager(Employee):
+class Manager(Employee):
 
-#     def work(self):
-#         print(f"{self.name} is a Manager and manages the team")
+    def work(self):
+        print(f"{self.name} is a Manager and manages the team")
 
-# developer = Developer("Pravin")
-# developer.work()
+developer = Developer("Pravin")
+developer.work()
 
-# print()
+print()
 
-# manager = Manager("Pravin")
-# manager.work()
+manager = Manager("Pravin")
+manager.work()
 
 
 
@@ -584,43 +584,43 @@
 #* Call both methods for each object.
 
 
-# from abc import ABC, abstractmethod
+from abc import ABC, abstractmethod
 
-# class Vehicle(ABC):
+class Vehicle(ABC):
 
-#     @abstractmethod
-#     def start(self):
-#         pass
+    @abstractmethod
+    def start(self):
+        pass
 
-#     @abstractmethod
-#     def stop(self):
-#         pass
+    @abstractmethod
+    def stop(self):
+        pass
 
-# class Car(Vehicle):
+class Car(Vehicle):
 
-#     def start(self):
-#         print("Car Started")
+    def start(self):
+        print("Car Started")
 
-#     def stop(self):
-#         print("Car Stopped")
+    def stop(self):
+        print("Car Stopped")
 
-# class Bike(Vehicle):
+class Bike(Vehicle):
 
-#     def start(self):
-#         print("Bike Started")
+    def start(self):
+        print("Bike Started")
 
-#     def stop(self):
-#         print("Bike Stopped")
+    def stop(self):
+        print("Bike Stopped")
 
-# car = Car()
-# car.start()
-# car.stop()
+car = Car()
+car.start()
+car.stop()
 
-# print()
+print()
 
-# bike = Bike()
-# bike.start()
-# bike.stop()
+bike = Bike()
+bike.start()
+bike.stop()
 
 
 
@@ -658,39 +658,39 @@
 
 #* Call the `area()` method for both objects.
 
-# from abc import ABC, abstractmethod
+from abc import ABC, abstractmethod
 
-# class Shape(ABC):
+class Shape(ABC):
 
-#     @abstractmethod
-#     def area(self):
-#         pass
+    @abstractmethod
+    def area(self):
+        pass
 
 
-# class Circle(Shape):
+class Circle(Shape):
 
-#     def __init__(self, radius):
-#         self.__radius = radius
+    def __init__(self, radius):
+        self.__radius = radius
 
-#     def area(self):
-#         print(f"Area of the Circle : {(22/7) * self.__radius * self.__radius}")
+    def area(self):
+        print(f"Area of the Circle : {(22/7) * self.__radius * self.__radius}")
 
-# class Rectangle(Shape):
+class Rectangle(Shape):
 
-#     def __init__(self, length, width):
-#         self.__length = length
-#         self.__width = width
+    def __init__(self, length, width):
+        self.__length = length
+        self.__width = width
 
-#     def area(self):
-#         print(f"Area of the Rectangle  : {self.__length * self.__width}")
+    def area(self):
+        print(f"Area of the Rectangle  : {self.__length * self.__width}")
 
-# circle = Circle(3)
-# circle.area()
+circle = Circle(3)
+circle.area()
 
-# print()
+print()
 
-# rectangle = Rectangle(30, 45)
-# rectangle.area()
+rectangle = Rectangle(30, 45)
+rectangle.area()
 
 
 
