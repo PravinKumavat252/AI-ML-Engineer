@@ -1,4 +1,4 @@
-# NumPy
+# 02_NumPy
 
 This folder contains my **NumPy learning notes, practice code, and exercises** completed as part of my Python and AI/ML learning journey.
 
